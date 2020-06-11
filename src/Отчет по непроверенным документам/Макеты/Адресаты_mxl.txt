@@ -1,0 +1,28 @@
+﻿Подразделение	To	CC
+IP	Tatyana.Romanchuk@glencore.com.ua,Sergey.Zdiruk@agrtec.com.ua	natalia.kostyuk@glencore.com.ua,Stanislava.Melnyk@glencore.com.ua,Inna.Moskvina@glencore.com.ua
+OP	Yulia.Kovshun@glencore.com.ua,Tatyana.Rypun@glencore.com.ua,Tatyana.Kushnirenko@glencore.com.ua	inna.andreychenko@glencore.com.ua,Stanislava.Melnyk@glencore.com.ua,Inna.Moskvina@glencore.com.ua,Mikhail.Smirnov@glencore.com.ua
+CP	Yuliia.Lyban@glencore.com.ua,Elena.Klanovets@glencore.com.ua,Iryna.Tatur@glencore.com.ua	yaroslav.chaban@glencore.com.ua,Stanislava.Melnyk@glencore.com.ua,Inna.Moskvina@glencore.com.ua,Vadim.Vergun@glencore.com.ua,Alexandr.Pugach@glencore.com.ua
+MP	Oksana.Karpenko@glencore.com.ua,Olga.Sulima@glencore.com.ua	lena.kapustina@glencore.com.ua,Stanislava.Melnyk@glencore.com.ua,Inna.Moskvina@glencore.com.ua,Oleg.Borisov@glencore.com.ua
+VP	Irina.Zhupanova@glencore.com.ua	natalia.kostyuk@glencore.com.ua,Stanislava.Melnyk@glencore.com.ua,Inna.Moskvina@glencore.com.ua,Mykhaylo.Pokovba@glencore.com.ua
+		
+IP	Aleksandr.Plyushchev@glencore.com.ua	Aleksandr.Plyushchev@glencore.com.ua
+OP	Aleksandr.Plyushchev@glencore.com.ua	Aleksandr.Plyushchev@glencore.com.ua
+CP	Aleksandr.Plyushchev@glencore.com.ua	Aleksandr.Plyushchev@glencore.com.ua
+MP	Aleksandr.Plyushchev@glencore.com.ua	Aleksandr.Plyushchev@glencore.com.ua
+VP	Aleksandr.Plyushchev@glencore.com.ua	Aleksandr.Plyushchev@glencore.com.ua
+
+		
+
+		
+		
+		
+
+
+
+
+
+
+
+
+
+		

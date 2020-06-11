@@ -1,0 +1,9 @@
+﻿05c97592-1822-4aff-b2c6-34f8e094489c-->und\05c97592-1822-4aff-b2c6-34f8e094489c
+05c97592-1822-4aff-b2c6-34f8e094489c.0-->und\05c97592-1822-4aff-b2c6-34f8e094489c.0
+560965e9-dcad-44f6-b4bf-77530f1ab7e6-->und\560965e9-dcad-44f6-b4bf-77530f1ab7e6
+560965e9-dcad-44f6-b4bf-77530f1ab7e6.0-->Form\ФормаОтчета
+copyinfo-->und\copyinfo
+ea64a749-6af9-4b8c-acda-e03635fb689c-->und\ea64a749-6af9-4b8c-acda-e03635fb689c
+root-->und\root
+version-->und\version
+versions-->und\versions

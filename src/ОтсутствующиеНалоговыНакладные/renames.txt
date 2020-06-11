@@ -1,0 +1,9 @@
+﻿4257cebb-c06b-4161-9649-676353ece4e7-->und\4257cebb-c06b-4161-9649-676353ece4e7
+4257cebb-c06b-4161-9649-676353ece4e7.0-->und\4257cebb-c06b-4161-9649-676353ece4e7.0
+7181f84b-deb0-4ac8-9770-93d0b3750044-->und\7181f84b-deb0-4ac8-9770-93d0b3750044
+92966d77-fc92-4584-b176-6c4fc4258b63-->und\92966d77-fc92-4584-b176-6c4fc4258b63
+92966d77-fc92-4584-b176-6c4fc4258b63.0-->Form\ФормаОтчета
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

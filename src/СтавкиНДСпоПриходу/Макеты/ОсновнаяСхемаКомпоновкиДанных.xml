@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетДт</dataPath>
+				<field>СчетДт</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидПосредника</dataPath>
+				<field>ВидПосредника</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Вид посредника</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорКонтрагента</dataPath>
+				<field>ДоговорКонтрагента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор контрагента</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Номенклатура</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОсвобожденоОтНДС</dataPath>
+				<field>ОсвобожденоОтНДС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Статус по НДС</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=Облагаемые; БИ=Освобожденные</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сумма</dataPath>
+				<field>Сумма</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма, грн.</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтавкаНДС</dataPath>
+				<field>СтавкаНДС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Ставка НДС</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНДС</dataPath>
+				<field>СуммаНДС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма НДС</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ответственный</dataPath>
+				<field>Ответственный</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Ответственный</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ДокТЧ.Ссылка,
+	ДокТЧ.ДоговорКонтрагента,
+	ДокТЧ.Склад,
+	ДокТЧ.СчетУчетаБУ КАК СчетПриходования,
+	ДокТЧ.НалоговоеНазначение,
+	ДокТЧ.Номенклатура,
+	ВЫБОР
+		КОГДА ДокТЧ.Ссылка.СуммаВключаетНДС
+			ТОГДА ДокТЧ.Сумма - ДокТЧ.СуммаНДС
+		ИНАЧЕ ДокТЧ.Сумма
+	КОНЕЦ КАК Сумма,
+	ДокТЧ.СтавкаНДС,
+	ДокТЧ.СуммаНДС
+ПОМЕСТИТЬ ДокТЧ
+ИЗ
+	Документ.ПоступлениеТоваровУслуг.Товары КАК ДокТЧ
+ГДЕ
+	ДокТЧ.Ссылка.Дата &gt;= &amp;НачалоПериода
+	И ДокТЧ.Ссылка.Дата &lt;= &amp;КонецПериода
+	И ДокТЧ.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДокТЧ.Ссылка,
+	ДокТЧ.ДоговорКонтрагента,
+	ДокТЧ.Склад,
+	ДокТЧ.СчетЗатрат,
+	ДокТЧ.НалоговоеНазначение,
+	ДокТЧ.Номенклатура,
+	ВЫБОР
+		КОГДА ДокТЧ.Ссылка.СуммаВключаетНДС
+			ТОГДА ДокТЧ.Сумма - ДокТЧ.СуммаНДС
+		ИНАЧЕ ДокТЧ.Сумма
+	КОНЕЦ,
+	ДокТЧ.СтавкаНДС,
+	ДокТЧ.СуммаНДС
+ИЗ
+	Документ.ПоступлениеТоваровУслуг.Услуги КАК ДокТЧ
+ГДЕ
+	ДокТЧ.Ссылка.Дата &gt;= &amp;НачалоПериода
+	И ДокТЧ.Ссылка.Дата &lt;= &amp;КонецПериода
+	И ДокТЧ.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДокТЧ.Ссылка,
+	ДокТЧ.Ссылка.ДоговорКонтрагента,
+	ДокТЧ.Ссылка.Склад,
+	ДокТЧ.СчетУчетаБУ,
+	ДокТЧ.НалоговоеНазначение,
+	ДокТЧ.Номенклатура,
+	ВЫБОР
+		КОГДА ДокТЧ.Ссылка.СуммаВключаетНДС
+			ТОГДА ДокТЧ.Сумма - ДокТЧ.СуммаНДС
+		ИНАЧЕ ДокТЧ.Сумма
+	КОНЕЦ,
+	ДокТЧ.СтавкаНДС,
+	ДокТЧ.СуммаНДС
+ИЗ
+	Документ.ПоступлениеТоваровУслуг.Оборудование КАК ДокТЧ
+ГДЕ
+	ДокТЧ.Ссылка.Дата &gt;= &amp;НачалоПериода
+	И ДокТЧ.Ссылка.Дата &lt;= &amp;КонецПериода
+	И ДокТЧ.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДокТЧ.Ссылка,
+	ДокТЧ.Ссылка.ДоговорКонтрагента,
+	ДокТЧ.Ссылка.Склад,
+	ДокТЧ.СчетУчетаБУ,
+	ДокТЧ.НалоговоеНазначение,
+	ДокТЧ.ОбъектСтроительства,
+	ВЫБОР
+		КОГДА ДокТЧ.Ссылка.СуммаВключаетНДС
+			ТОГДА ДокТЧ.Сумма - ДокТЧ.СуммаНДС
+		ИНАЧЕ ДокТЧ.Сумма
+	КОНЕЦ,
+	ДокТЧ.СтавкаНДС,
+	ДокТЧ.СуммаНДС
+ИЗ
+	Документ.ПоступлениеТоваровУслуг.ОбъектыСтроительства КАК ДокТЧ
+ГДЕ
+	ДокТЧ.Ссылка.Дата &gt;= &amp;НачалоПериода
+	И ДокТЧ.Ссылка.Дата &lt;= &amp;КонецПериода
+	И ДокТЧ.Ссылка.Проведен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДокТЧ.Ссылка,
+	ДокТЧ.Ссылка.Ответственный КАК Ответственный,
+	ДокТЧ.ДоговорКонтрагента,
+	ДокТЧ.ДоговорКонтрагента.ВидПосредника КАК ВидПосредника,
+	ДокТЧ.СчетПриходования КАК СчетДт,
+	ДокТЧ.Номенклатура,
+	ДокТЧ.Номенклатура.ОсвобожденоОтНДС КАК ОсвобожденоОтНДС,
+	ДокТЧ.НалоговоеНазначение,
+	ДокТЧ.СтавкаНДС,
+	СУММА(ДокТЧ.Сумма) КАК Сумма,
+	СУММА(ДокТЧ.СуммаНДС) КАК СуммаНДС
+ИЗ
+	ДокТЧ КАК ДокТЧ
+
+СГРУППИРОВАТЬ ПО
+	ДокТЧ.Ссылка,
+	ДокТЧ.ДоговорКонтрагента,
+	ДокТЧ.ДоговорКонтрагента.ВидПосредника,
+	ДокТЧ.Номенклатура,
+	ДокТЧ.Номенклатура.ОсвобожденоОтНДС,
+	ДокТЧ.СчетПриходования,
+	ДокТЧ.НалоговоеНазначение,
+	ДокТЧ.СтавкаНДС,
+	ДокТЧ.Ссылка.Ответственный</query>
+		</dataSet>
+		<totalField>
+			<dataPath>Сумма</dataPath>
+			<expression>Сумма(Сумма)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаНДС</dataPath>
+			<expression>Сумма(СуммаНДС)</expression>
+		</totalField>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Ссылка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Ответственный</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидПосредника</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДоговорКонтрагента</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СчетДт</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Номенклатура</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОсвобожденоОтНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НалоговоеНазначение</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СтавкаНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Сумма</field>
+		</item>
+	</selection>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Ссылка</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ВидПосредника</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ОсвобожденоОтНДС</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>Номенклатура</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ДоговорКонтрагента</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

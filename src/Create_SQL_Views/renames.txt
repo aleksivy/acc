@@ -1,0 +1,13 @@
+﻿02f35783-d0e7-49aa-b27d-58348c6ac6bc.0\info-->und\02f35783-d0e7-49aa-b27d-58348c6ac6bc.0\info
+02f35783-d0e7-49aa-b27d-58348c6ac6bc.0\text-->ObjectModule.bsl
+08a944da-4bb8-4d6b-844f-a4ec933d36f0-->und\08a944da-4bb8-4d6b-844f-a4ec933d36f0
+08a944da-4bb8-4d6b-844f-a4ec933d36f0.0-->Form\АвторизацияВРабочемПроцессе
+2ea69f19-21a2-47c4-82ba-fdef0950ccbf-->und\2ea69f19-21a2-47c4-82ba-fdef0950ccbf
+2ea69f19-21a2-47c4-82ba-fdef0950ccbf.0-->Form\АвторизацияНаСервере
+5496f17c-71d1-4649-8fdc-5b99fe4fdbb0-->und\5496f17c-71d1-4649-8fdc-5b99fe4fdbb0
+6a3cc65c-1ef3-48e3-8e03-477abd0ad056-->und\6a3cc65c-1ef3-48e3-8e03-477abd0ad056
+6a3cc65c-1ef3-48e3-8e03-477abd0ad056.0-->Form\Форма
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

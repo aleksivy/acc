@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Договор</dataPath>
+				<field>Договор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаКт</dataPath>
+				<field>ВалютаКт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Валюта</dataPath>
+				<field>Валюта</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НужнаяДата</dataPath>
+				<field>НужнаяДата</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Нужная дата</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоДт1</dataPath>
+				<field>СубконтоДт1</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счет</dataPath>
+				<field>Счет</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоДт2</dataPath>
+				<field>СубконтоДт2</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Контрагент</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаЗадолженностиПоДокументу</dataPath>
+				<field>СуммаЗадолженностиПоДокументу</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Задолженность НДС по документу</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначениеКт</dataPath>
+				<field>НалоговоеНазначениеКт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоДт3</dataPath>
+				<field>СубконтоДт3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто1</dataPath>
+				<field>Субконто1</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто2</dataPath>
+				<field>Субконто2</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто3</dataPath>
+				<field>Субконто3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоКт1</dataPath>
+				<field>СубконтоКт1</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетДт</dataPath>
+				<field>СчетДт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоКт2</dataPath>
+				<field>СубконтоКт2</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоКт3</dataPath>
+				<field>СубконтоКт3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НДСПоДокументу</dataPath>
+				<field>НДСПоДокументу</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>НДС по документу</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Период</dataPath>
+				<field>Период</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДокументВзаиморасчетов</dataPath>
+				<field>ДокументВзаиморасчетов</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ взаиморасчетов</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Просрочено</dataPath>
+				<field>Просрочено</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Просрочено</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетКт</dataPath>
+				<field>СчетКт</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НакопительнаяСуммаНДС</dataPath>
+				<field>НакопительнаяСуммаНДС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Накопительная сумма НДС</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаДт</dataPath>
+				<field>ВалютаДт</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначениеДт</dataPath>
+				<field>НалоговоеНазначениеДт</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаОстатокДт</dataPath>
+				<field>СуммаОстатокДт</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаток на 6442</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Рег.Субконто2 КАК Договор,
+	Рег.Субконто3 КАК ДокументВзаиморасчетов,
+	СУММА(Рег.СуммаОстатокДт) КАК СуммаОстатокДт
+ПОМЕСТИТЬ Остатки
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.Остатки(НАЧАЛОПЕРИОДА(&amp;ДатаОстатков, ДЕНЬ), Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредитНеподтвержденный), , ) КАК Рег
+
+СГРУППИРОВАТЬ ПО
+	Рег.Субконто2,
+	Рег.Субконто3
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.СубконтоДт2 КАК Договор,
+	Рег.СубконтоДт3 КАК ДокументВзаиморасчетов,
+	Рег.Период,
+	Рег.Регистратор,
+	СУММА(Рег.СуммаОборот) КАК СуммаОборот
+ПОМЕСТИТЬ Обороты1
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(
+			ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаОстатков, ДЕНЬ), МЕСЯЦ, -6),
+			НАЧАЛОПЕРИОДА(&amp;ДатаОстатков, ДЕНЬ),
+			Регистратор,
+			СчетДт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредитНеподтвержденный),
+			,
+			СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.РасчетыСОтечественнымиПоставщиками)
+				ИЛИ СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредит),
+			,
+			СубконтоДт2 В
+					(ВЫБРАТЬ
+						Остатки.Договор
+					ИЗ
+						Остатки КАК Остатки)
+				И (СубконтоДт3 В
+						(ВЫБРАТЬ
+							Остатки.ДокументВзаиморасчетов
+						ИЗ
+							Остатки КАК Остатки)
+					ИЛИ СубконтоДт3 = НЕОПРЕДЕЛЕНО
+					ИЛИ СубконтоДт3 = NULL)) КАК Рег
+
+СГРУППИРОВАТЬ ПО
+	Рег.СубконтоДт2,
+	Рег.СубконтоДт3,
+	Рег.Период,
+	Рег.Регистратор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.СубконтоКт2 КАК Договор,
+	Рег.СубконтоКт3 КАК ДокументВзаиморасчетов,
+	Рег.Регистратор.ДокументОснование КАК Регистратор,
+	СУММА(Рег.СуммаОборот) КАК СуммаОборот
+ПОМЕСТИТЬ ВходящиеНН
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(
+			ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаОстатков, ДЕНЬ), МЕСЯЦ, -6),
+			НАЧАЛОПЕРИОДА(&amp;ДатаОстатков, ДЕНЬ),
+			Регистратор,
+			СчетДт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.РасчетыПоНДС),
+			,
+			СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредитНеподтвержденный),
+			,
+			СубконтоКт2 В
+					(ВЫБРАТЬ
+						Остатки.Договор
+					ИЗ
+						Остатки КАК Остатки)
+				И (СубконтоКт3 В
+						(ВЫБРАТЬ
+							Остатки.ДокументВзаиморасчетов
+						ИЗ
+							Остатки КАК Остатки)
+					ИЛИ СубконтоДт3 = НЕОПРЕДЕЛЕНО
+					ИЛИ СубконтоДт3 = NULL)) КАК Рег
+ГДЕ
+	ТИПЗНАЧЕНИЯ(Рег.Регистратор) = ТИП(Документ.РегистрацияВходящегоНалоговогоДокумента)
+	И НЕ Рег.Регистратор.ДокументОснование = НЕОПРЕДЕЛЕНО
+
+СГРУППИРОВАТЬ ПО
+	Рег.СубконтоКт2,
+	Рег.СубконтоКт3,
+	Рег.Регистратор.ДокументОснование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Обороты1.Договор,
+	Обороты1.ДокументВзаиморасчетов,
+	Обороты1.Период,
+	Обороты1.Регистратор,
+	СУММА(Обороты1.СуммаОборот - ЕСТЬNULL(ВходящиеНН.СуммаОборот, 0)) КАК СуммаОборот
+ПОМЕСТИТЬ Обороты
+ИЗ
+	Обороты1 КАК Обороты1
+		ЛЕВОЕ СОЕДИНЕНИЕ ВходящиеНН КАК ВходящиеНН
+		ПО Обороты1.Договор = ВходящиеНН.Договор
+			И Обороты1.ДокументВзаиморасчетов = ВходящиеНН.ДокументВзаиморасчетов
+			И Обороты1.Регистратор = ВходящиеНН.Регистратор
+
+СГРУППИРОВАТЬ ПО
+	Обороты1.Договор,
+	Обороты1.ДокументВзаиморасчетов,
+	Обороты1.Период,
+	Обороты1.Регистратор
+
+ИМЕЮЩИЕ
+	СУММА(Обороты1.СуммаОборот - ЕСТЬNULL(ВходящиеНН.СуммаОборот, 0)) &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Обороты.Договор КАК Договор,
+	Обороты.ДокументВзаиморасчетов КАК ДокументВзаиморасчетов,
+	Обороты.Период КАК Период,
+	МАКСИМУМ(Обороты.Регистратор) КАК Регистратор,
+	СУММА(Обороты1.СуммаОборот) КАК НакопительнаяСумма
+ПОМЕСТИТЬ НакопительныеСуммы1
+ИЗ
+	Обороты КАК Обороты
+		ЛЕВОЕ СОЕДИНЕНИЕ Обороты КАК Обороты1
+		ПО Обороты.Договор = Обороты1.Договор
+			И Обороты.ДокументВзаиморасчетов = Обороты1.ДокументВзаиморасчетов
+			И Обороты.Период &lt;= Обороты1.Период
+
+СГРУППИРОВАТЬ ПО
+	Обороты.Договор,
+	Обороты.ДокументВзаиморасчетов,
+	Обороты.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НакопительныеСуммы1.Договор,
+	НакопительныеСуммы1.ДокументВзаиморасчетов,
+	НакопительныеСуммы1.Период,
+	НакопительныеСуммы1.Регистратор,
+	НакопительныеСуммы1.НакопительнаяСумма,
+	Обороты.СуммаОборот
+ПОМЕСТИТЬ НакопительныеСуммы2
+ИЗ
+	НакопительныеСуммы1 КАК НакопительныеСуммы1
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Обороты КАК Обороты
+		ПО НакопительныеСуммы1.Договор = Обороты.Договор
+			И НакопительныеСуммы1.ДокументВзаиморасчетов = Обороты.ДокументВзаиморасчетов
+			И НакопительныеСуммы1.Период = Обороты.Период
+			И НакопительныеСуммы1.Регистратор = Обороты.Регистратор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Остатки.Договор КАК Договор,
+	Остатки.ДокументВзаиморасчетов КАК ДокументВзаиморасчетов,
+	Остатки.СуммаОстатокДт,
+	НакопительныеСуммы2.Период КАК Период,
+	НакопительныеСуммы2.Регистратор,
+	НакопительныеСуммы2.НакопительнаяСумма КАК НакопительнаяСуммаНДС,
+	НакопительныеСуммы2.СуммаОборот КАК НДСПоДокументу,
+	ВЫБОР
+		КОГДА Остатки.СуммаОстатокДт &gt;= НакопительныеСуммы2.НакопительнаяСумма
+			ТОГДА НакопительныеСуммы2.СуммаОборот
+		ИНАЧЕ Остатки.СуммаОстатокДт - (НакопительныеСуммы2.НакопительнаяСумма - НакопительныеСуммы2.СуммаОборот)
+	КОНЕЦ КАК СуммаЗадолженностиПоДокументу,
+	ВЫБОР
+		КОГДА &amp;ДатаОстатков &lt; ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаОстатков, МЕСЯЦ), ДЕНЬ, 15)
+			ТОГДА ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(&amp;ДатаОстатков, МЕСЯЦ, -1), МЕСЯЦ), ДЕНЬ, 15)
+		ИНАЧЕ НАЧАЛОПЕРИОДА(&amp;ДатаОстатков, МЕСЯЦ)
+	КОНЕЦ КАК НужнаяДата
+ПОМЕСТИТЬ Врем
+ИЗ
+	Остатки КАК Остатки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ НакопительныеСуммы2 КАК НакопительныеСуммы2
+		ПО Остатки.Договор = НакопительныеСуммы2.Договор
+			И Остатки.ДокументВзаиморасчетов = НакопительныеСуммы2.ДокументВзаиморасчетов
+			И (Остатки.СуммаОстатокДт &gt;= НакопительныеСуммы2.НакопительнаяСумма
+				ИЛИ Остатки.СуммаОстатокДт &gt; НакопительныеСуммы2.НакопительнаяСумма - НакопительныеСуммы2.СуммаОборот)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Врем.Договор.Владелец КАК Контрагент,
+	Врем.Договор КАК Договор,
+	Врем.ДокументВзаиморасчетов КАК ДокументВзаиморасчетов,
+	Врем.СуммаОстатокДт,
+	Врем.Период КАК Период,
+	Врем.Регистратор,
+	Врем.НакопительнаяСуммаНДС,
+	Врем.НДСПоДокументу,
+	Врем.СуммаЗадолженностиПоДокументу,
+	Врем.НужнаяДата,
+	ВЫБОР
+		КОГДА Врем.Период &lt; Врем.НужнаяДата
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Просрочено
+ИЗ
+	Врем КАК Врем</query>
+		</dataSet>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ДатаОстатков</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата остатков</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Контрагент</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Договор</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДокументВзаиморасчетов</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаОстатокДт</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Регистратор</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НДСПоДокументу</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаЗадолженностиПоДокументу</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Просрочено</field>
+		</item>
+	</selection>
+	<dataParameters/>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Контрагент</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>Договор</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ДокументВзаиморасчетов</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>Период</field>
+			<orderType>Desc</orderType>
+		</item>
+	</order>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

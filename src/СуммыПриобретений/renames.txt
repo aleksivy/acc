@@ -1,0 +1,9 @@
+﻿2afba595-ad63-4596-bab9-58e5426386bd-->und\2afba595-ad63-4596-bab9-58e5426386bd
+6f73f8c3-a379-42a4-894e-c31dc5104f75-->und\6f73f8c3-a379-42a4-894e-c31dc5104f75
+6f73f8c3-a379-42a4-894e-c31dc5104f75.0-->und\6f73f8c3-a379-42a4-894e-c31dc5104f75.0
+copyinfo-->und\copyinfo
+d897c92e-8091-4176-a2ea-f8cb8fc6cbd3-->und\d897c92e-8091-4176-a2ea-f8cb8fc6cbd3
+d897c92e-8091-4176-a2ea-f8cb8fc6cbd3.0-->Form\ФормаОтчета
+root-->und\root
+version-->und\version
+versions-->und\versions

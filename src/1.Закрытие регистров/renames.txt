@@ -1,0 +1,11 @@
+﻿903de6d4-8bcf-4f0d-8e61-fd5673e7475d-->und\903de6d4-8bcf-4f0d-8e61-fd5673e7475d
+903de6d4-8bcf-4f0d-8e61-fd5673e7475d.0-->Form\ФормаДокумента
+91fa2645-1988-4e1c-bfc1-888d21a92929-->und\91fa2645-1988-4e1c-bfc1-888d21a92929
+91fa2645-1988-4e1c-bfc1-888d21a92929.0-->Form\Настройки
+a94ea6aa-0a63-4580-829c-f0a1c14abf62.0\info-->und\a94ea6aa-0a63-4580-829c-f0a1c14abf62.0\info
+a94ea6aa-0a63-4580-829c-f0a1c14abf62.0\text-->ObjectModule.bsl
+copyinfo-->und\copyinfo
+d7d8f92d-0831-4f98-a88b-a90f4a1b8045-->und\d7d8f92d-0831-4f98-a88b-a90f4a1b8045
+root-->und\root
+version-->und\version
+versions-->und\versions

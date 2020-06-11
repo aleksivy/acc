@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счет</dataPath>
+				<field>Счет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто1</dataPath>
+				<field>Субконто1</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто2</dataPath>
+				<field>Субконто2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто3</dataPath>
+				<field>Субконто3</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Баланс</dataPath>
+				<field>Баланс</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Первоначальная ст-сть</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Валюта</dataPath>
+				<field>Валюта</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Износ</dataPath>
+				<field>Износ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Накопленный износ</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИнвентарныйНомер</dataPath>
+				<field>ИнвентарныйНомер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Код</dataPath>
+				<field>Код</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Код</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Местонахождение</dataPath>
+				<field>Местонахождение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МОЛ</dataPath>
+				<field>МОЛ</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НачислятьАмортизацию</dataPath>
+				<field>НачислятьАмортизацию</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Амортизировать</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОС</dataPath>
+				<field>ОС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ОС</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Регистратор</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СрокПолезногоИспользования</dataPath>
+				<field>СрокПолезногоИспользования</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Срок полезного использования</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтоимостьДляВычисленияАмортизации</dataPath>
+				<field>СтоимостьДляВычисленияАмортизации</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Стоимость для вычисления амортизации</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетБаланс</dataPath>
+				<field>СчетБаланс</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Счет баланс</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетИзнос</dataPath>
+				<field>СчетИзнос</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Счет износ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипАктива</dataPath>
+				<field>ТипАктива</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Тип актива</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Остаток</dataPath>
+				<field>Остаток</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаточная ст-сть</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Рег.ОсновноеСредство КАК ОС,
+	Рег.ИнвентарныйНомер
+ПОМЕСТИТЬ ИнвНомера
+ИЗ
+	РегистрСведений.ПервоначальныеСведенияОСБухгалтерскийУчет.СрезПоследних(&amp;Дата, ) КАК Рег
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Рег.НематериальныйАктив,
+	Рег.НематериальныйАктив.Код
+ИЗ
+	РегистрСведений.ПервоначальныеСведенияНМАБухгалтерскийУчет.СрезПоследних(&amp;Дата, ) КАК Рег
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.ОсновноеСредство КАК ОС,
+	Рег.МОЛ,
+	Рег.Местонахождение
+ПОМЕСТИТЬ Филиал
+ИЗ
+	РегистрСведений.МестонахождениеОСБухгалтерскийУчет.СрезПоследних(&amp;Дата, ) КАК Рег
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Рег.НематериальныйАктив,
+	Рег.МОЛ,
+	Рег.Местонахождение
+ИЗ
+	РегистрСведений.МестонахождениеНМАБухгалтерскийУчет.СрезПоследних(&amp;Дата, ) КАК Рег
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РегБаланс.Счет КАК СчетБаланс,
+	РегИзнос.Счет КАК СчетИзнос,
+	ЕСТЬNULL(РегБаланс.Субконто1, РегИзнос.Субконто1) КАК ОС,
+	ЕСТЬNULL(РегБаланс.СуммаОстаток, 0) КАК Баланс,
+	ЕСТЬNULL(-РегИзнос.СуммаОстаток, 0) КАК Износ
+ПОМЕСТИТЬ БухИтоги
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.Остатки(
+			&amp;Дата,
+			Счет В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ОсновныеСредства))
+				ИЛИ Счет В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ДругиеНеоборотныеМатериальныеАктивыГруппа))
+				ИЛИ Счет В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НематериальныеАктивы)),
+			,
+			) КАК РегБаланс
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрБухгалтерии.Хозрасчетный.Остатки(&amp;Дата, Счет В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ИзносАмортизацияНеоборотныхАктивов)), , ) КАК РегИзнос
+		ПО РегБаланс.Субконто1 = РегИзнос.Субконто1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.НематериальныйАктив КАК ОС,
+	Рег.Регистратор,
+	Рег.ПервоначальнаяСтоимость,
+	Рег.НачислятьАмортизацию,
+	Рег.СрокПолезногоИспользования
+ПОМЕСТИТЬ ПараметрыНМА
+ИЗ
+	РегистрСведений.ПервоначальныеСведенияНМАБухгалтерскийУчет.СрезПоследних КАК Рег
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(Рег.ОсновноеСредство, Начислять.ОсновноеСредство) КАК ОС,
+	Рег.Регистратор КАК Регистратор,
+	ЕСТЬNULL(Рег.СрокПолезногоИспользования, 0) КАК СрокПолезногоИспользования,
+	ЕСТЬNULL(Рег.СрокИспользованияДляВычисленияАмортизации, 0) КАК СрокИспользованияДляВычисленияАмортизации,
+	ЕСТЬNULL(Рег.СтоимостьДляВычисленияАмортизации, 0) КАК СтоимостьДляВычисленияАмортизации,
+	ЕСТЬNULL(Начислять.НачислятьАмортизацию, ЛОЖЬ) КАК НачислятьАмортизацию
+ПОМЕСТИТЬ ПараметрыОС
+ИЗ
+	РегистрСведений.ПараметрыАмортизацииОСБухгалтерскийУчет.СрезПоследних(&amp;Дата, ) КАК Рег
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.НачислениеАмортизацииОСБухгалтерскийУчет.СрезПоследних(&amp;Дата, ) КАК Начислять
+		ПО Рег.ОсновноеСредство = Начислять.ОсновноеСредство
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	БухИтоги.ОС,
+	БухИтоги.СчетБаланс,
+	БухИтоги.СчетИзнос,
+	БухИтоги.Баланс,
+	БухИтоги.Износ,
+	ВЫБОР
+		КОГДА ТИПЗНАЧЕНИЯ(БухИтоги.ОС) = ТИП(Справочник.ОсновныеСредства)
+			ТОГДА ПараметрыОС.Регистратор
+		ИНАЧЕ ПараметрыНМА.Регистратор
+	КОНЕЦ КАК Регистратор,
+	ВЫБОР
+		КОГДА ТИПЗНАЧЕНИЯ(БухИтоги.ОС) = ТИП(Справочник.ОсновныеСредства)
+			ТОГДА ПараметрыОС.СтоимостьДляВычисленияАмортизации
+		ИНАЧЕ ПараметрыНМА.ПервоначальнаяСтоимость
+	КОНЕЦ КАК СтоимостьДляВычисленияАмортизации,
+	ВЫБОР
+		КОГДА ТИПЗНАЧЕНИЯ(БухИтоги.ОС) = ТИП(Справочник.ОсновныеСредства)
+			ТОГДА ПараметрыОС.НачислятьАмортизацию
+		ИНАЧЕ ПараметрыНМА.НачислятьАмортизацию
+	КОНЕЦ КАК НачислятьАмортизацию,
+	ВЫБОР
+		КОГДА ТИПЗНАЧЕНИЯ(БухИтоги.ОС) = ТИП(Справочник.ОсновныеСредства)
+			ТОГДА ПараметрыОС.СрокИспользованияДляВычисленияАмортизации
+		ИНАЧЕ ПараметрыНМА.СрокПолезногоИспользования
+	КОНЕЦ КАК СрокПолезногоИспользования
+ПОМЕСТИТЬ Свод
+ИЗ
+	БухИтоги КАК БухИтоги
+		ЛЕВОЕ СОЕДИНЕНИЕ ПараметрыНМА КАК ПараметрыНМА
+		ПО БухИтоги.ОС = ПараметрыНМА.ОС
+		ЛЕВОЕ СОЕДИНЕНИЕ ПараметрыОС КАК ПараметрыОС
+		ПО БухИтоги.ОС = ПараметрыОС.ОС
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТИПЗНАЧЕНИЯ(Свод.ОС) КАК ТипАктива,
+	Свод.ОС КАК ОС,
+	Свод.ОС.Код КАК Код,
+	ИнвНомера.ИнвентарныйНомер,
+	Филиал.МОЛ,
+	Филиал.Местонахождение,
+	Свод.Регистратор КАК Регистратор,
+	Свод.СчетБаланс,
+	Свод.СчетИзнос,
+	Свод.Баланс,
+	Свод.Износ,
+	Свод.Баланс - Свод.Износ КАК Остаток,
+	Свод.СтоимостьДляВычисленияАмортизации,
+	Свод.НачислятьАмортизацию,
+	Свод.СрокПолезногоИспользования
+ИЗ
+	Свод КАК Свод
+		ЛЕВОЕ СОЕДИНЕНИЕ Филиал КАК Филиал
+		ПО Свод.ОС = Филиал.ОС
+		ЛЕВОЕ СОЕДИНЕНИЕ ИнвНомера КАК ИнвНомера
+		ПО Свод.ОС = ИнвНомера.ОС</query>
+		</dataSet>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>Дата</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>ТипАктива</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Код</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ИнвентарныйНомер</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Местонахождение</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>МОЛ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Регистратор</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СчетБаланс</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СчетИзнос</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НачислятьАмортизацию</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СрокПолезногоИспользования</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Баланс</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Износ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Остаток</field>
+		</item>
+	</selection>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>ТипАктива</field>
+			<orderType>Desc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ОС</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

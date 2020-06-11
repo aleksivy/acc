@@ -1,0 +1,9 @@
+﻿23a552ce-25bc-45e2-81f0-f8214ab33652-->und\23a552ce-25bc-45e2-81f0-f8214ab33652
+23a552ce-25bc-45e2-81f0-f8214ab33652.0-->und\23a552ce-25bc-45e2-81f0-f8214ab33652.0
+2cf306b4-c3cc-48e5-a581-bffc52143ea1-->und\2cf306b4-c3cc-48e5-a581-bffc52143ea1
+copyinfo-->und\copyinfo
+e9c06994-10fe-477a-ad53-572838d54df9-->und\e9c06994-10fe-477a-ad53-572838d54df9
+e9c06994-10fe-477a-ad53-572838d54df9.0-->Form\ФормаОтчета
+root-->und\root
+version-->und\version
+versions-->und\versions

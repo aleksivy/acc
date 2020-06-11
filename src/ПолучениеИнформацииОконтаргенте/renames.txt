@@ -1,0 +1,7 @@
+﻿72b452f0-aca7-4051-9aae-5bae48926a3f-->und\72b452f0-aca7-4051-9aae-5bae48926a3f
+copyinfo-->und\copyinfo
+e27ca5f6-a652-48e8-8d91-6119f71d0814-->und\e27ca5f6-a652-48e8-8d91-6119f71d0814
+e27ca5f6-a652-48e8-8d91-6119f71d0814.0-->Form\ФормаОтчета
+root-->und\root
+version-->und\version
+versions-->und\versions

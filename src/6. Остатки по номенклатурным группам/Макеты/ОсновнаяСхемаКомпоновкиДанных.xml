@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто1</dataPath>
+				<field>Субконто1</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто2</dataPath>
+				<field>Субконто2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто3</dataPath>
+				<field>Субконто3</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БИТ_МСФО_ПланСчетов</dataPath>
+				<field>БИТ_МСФО_ПланСчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Валюта</dataPath>
+				<field>Валюта</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество</dataPath>
+				<field>Количество</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Контрагент</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Размещение</parameter>
+						<value xsi:type="DataCompositionTextPlacementType">Cut</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Статья</dataPath>
+				<field>Статья</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Статья</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Размещение</parameter>
+						<value xsi:type="DataCompositionTextPlacementType">Cut</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаГрн</dataPath>
+				<field>СуммаГрн</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма грн</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаДол</dataPath>
+				<field>СуммаДол</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма дол</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счет</dataPath>
+				<field>Счет</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТМЦ</dataPath>
+				<field>ТМЦ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ТМЦ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Размещение</parameter>
+						<value xsi:type="DataCompositionTextPlacementType">Cut</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипДоговора</dataPath>
+				<field>ТипДоговора</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Тип договора</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Размещение</parameter>
+						<value xsi:type="DataCompositionTextPlacementType">Cut</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонтрагентЕДРПОУ</dataPath>
+				<field>КонтрагентЕДРПОУ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Контрагент ЕДРПОУ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Размещение</parameter>
+						<value xsi:type="DataCompositionTextPlacementType">Cut</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Intercompany</dataPath>
+				<field>Intercompany</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Adjustments</dataPath>
+				<field>Adjustments</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА Рег.Счет.Код = "39"
+				ИЛИ Рег.Счет.Код = "231"
+			ТОГДА "Inventory"
+		КОГДА Рег.Счет.Код = "6435"
+				ИЛИ Рег.Счет.Код = "6443"
+				ИЛИ Рег.Счет.Код = "6412"
+			ТОГДА "Net non-trade receivables/payables: VAT"
+		ИНАЧЕ "Other non trade receivables/payables"
+	КОНЕЦ КАК Статья,
+	Рег.Счет КАК Счет,
+	ВЫБОР
+		КОГДА Рег.Счет.ВалютныйПоЛокальномуУчету
+				И Рег.Валюта = ЗНАЧЕНИЕ(Справочник.Валюты.Гривна)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.Валюты.Доллар)
+		ИНАЧЕ Рег.Валюта
+	КОНЕЦ КАК Валюта,
+	ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка) КАК Контрагент,
+	"" КАК КонтрагентЕДРПОУ,
+	Рег.Субконто1 КАК ТМЦ,
+	ЗНАЧЕНИЕ(Перечисление.ТипДоговора.ПустаяСсылка) КАК ТипДоговора,
+	Рег.СуммаОстаток КАК СуммаДол,
+	Рег.ВалютнаяСуммаОстаток КАК СуммаГрн,
+	Рег.КоличествоОстаток КАК Количество
+ИЗ
+	РегистрБухгалтерии.МСФО.Остатки(
+			&amp;Дата,
+			НЕ Счет.Забалансовый
+				И НЕ Счет В ИЕРАРХИИ (&amp;СписокСчетовИсключений)
+				И НЕ Счет.Код = "382"
+				И НЕ Счет.Код = "474"
+				И НЕ Счет.Код = "475",
+			ЗНАЧЕНИЕ(ПланВидовХарактеристик.ВидыСубконтоХозрасчетные.НоменклатурныеГруппы),
+			) КАК Рег
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА Рег.Счет.Код = "2873"
+				ИЛИ Рег.Счет.Код = "379"
+			ТОГДА "Equity"
+		КОГДА Рег.Счет.Код = "26"
+				ИЛИ Рег.Счет.Код = "281"
+				ИЛИ Рег.Счет.Код = "284"
+				ИЛИ Рег.Счет.Код = "2871"
+				ИЛИ Рег.Счет.Код = "2872"
+				ИЛИ Рег.Счет.Код = "2874"
+			ТОГДА "Inventory"
+		ИНАЧЕ "Other non trade receivables/payables"
+	КОНЕЦ,
+	Рег.Счет,
+	ВЫБОР
+		КОГДА Рег.Счет.ВалютныйПоЛокальномуУчету
+				И Рег.Валюта = ЗНАЧЕНИЕ(Справочник.Валюты.Гривна)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.Валюты.Доллар)
+		ИНАЧЕ Рег.Валюта
+	КОНЕЦ,
+	ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка),
+	"",
+	Рег.Субконто1.НоменклатурнаяГруппа,
+	ЗНАЧЕНИЕ(Перечисление.ТипДоговора.ПустаяСсылка),
+	Рег.СуммаОстаток,
+	Рег.ВалютнаяСуммаОстаток,
+	Рег.КоличествоОстаток
+ИЗ
+	РегистрБухгалтерии.МСФО.Остатки(
+			&amp;Дата,
+			НЕ Счет.Забалансовый
+				И НЕ Счет В ИЕРАРХИИ (&amp;СписокСчетовИсключений),
+			ЗНАЧЕНИЕ(ПланВидовХарактеристик.ВидыСубконтоХозрасчетные.Номенклатура),
+			) КАК Рег
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА Рег.Счет.Код = "361"
+				ИЛИ Рег.Счет.Код = "362"
+				ИЛИ Рег.Счет.Код = "381"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1.Владелец В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ "Trade receivables"
+				КОНЕЦ
+		КОГДА ПОДСТРОКА(Рег.Счет.Код, 1, 3) = "371"
+				ИЛИ Рег.Счет.Код = "383"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1.Владелец В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ ВЫБОР
+							КОГДА Рег.Субконто1.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.Товары)
+									ИЛИ Рег.Субконто1.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.ЭкспедиторскиеУслуги)
+									ИЛИ Рег.Субконто1.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.УслугиЭлеваторов)
+								ТОГДА "Prepayments / advances"
+							ИНАЧЕ "Other non trade receivables/payables"
+						КОНЕЦ
+				КОНЕЦ
+		КОГДА ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "63"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1.Владелец В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ ВЫБОР
+							КОГДА Рег.Субконто1.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.Товары)
+									ИЛИ Рег.Субконто1.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.ЭкспедиторскиеУслуги)
+									ИЛИ Рег.Субконто1.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.УслугиЭлеваторов)
+								ТОГДА "Trade payables 3rd party"
+							ИНАЧЕ "Other non trade receivables/payables"
+						КОНЕЦ
+				КОНЕЦ
+		КОГДА ПОДСТРОКА(Рег.Счет.Код, 1, 3) = "681"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1.Владелец В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ ВЫБОР
+							КОГДА Рег.Субконто1.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.Товары)
+								ТОГДА "Trade payables 3rd party"
+							ИНАЧЕ "Other non trade receivables/payables"
+						КОНЕЦ
+				КОНЕЦ
+		КОГДА Рег.Счет.Код = "3771"
+				ИЛИ Рег.Счет.Код = "6851"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1.Владелец В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ "Other non trade receivables/payables"
+				КОНЕЦ
+		КОГДА Рег.Счет.Код = "601"
+				ИЛИ Рег.Счет.Код = "602"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1.Владелец В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ "Short term banks loans / curr.accounts: Bank loans"
+				КОНЕЦ
+		КОГДА Рег.Счет.Код = "6841"
+				ИЛИ Рег.Счет.Код = "6842"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1.Владелец В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ "Short term banks loans / curr.accounts: Bank loans %"
+				КОНЕЦ
+		КОГДА Рег.Счет.Код = "6431"
+				ИЛИ Рег.Счет.Код = "6432"
+				ИЛИ Рег.Счет.Код = "6433"
+				ИЛИ Рег.Счет.Код = "6441"
+				ИЛИ Рег.Счет.Код = "6442"
+				ИЛИ Рег.Счет.Код = "6444"
+			ТОГДА "Net non-trade receivables/payables: VAT"
+		ИНАЧЕ "Other non trade receivables/payables"
+	КОНЕЦ,
+	Рег.Счет,
+	ВЫБОР
+		КОГДА Рег.Счет.ВалютныйПоЛокальномуУчету
+				И Рег.Валюта = ЗНАЧЕНИЕ(Справочник.Валюты.Гривна)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.Валюты.Доллар)
+		ИНАЧЕ Рег.Валюта
+	КОНЕЦ,
+	Рег.Субконто1.Владелец,
+	"_" + Рег.Субконто1.Владелец.КодПоЕДРПОУ,
+	Рег.Субконто1.Номенклатура.НоменклатурнаяГруппа,
+	Рег.Субконто1.ТипДоговора,
+	Рег.СуммаОстаток,
+	Рег.ВалютнаяСуммаОстаток,
+	Рег.КоличествоОстаток
+ИЗ
+	РегистрБухгалтерии.МСФО.Остатки(
+			&amp;Дата,
+			НЕ Счет.Забалансовый
+				И НЕ Счет В ИЕРАРХИИ (&amp;СписокСчетовИсключений),
+			ЗНАЧЕНИЕ(ПланВидовХарактеристик.ВидыСубконтоХозрасчетные.Договоры),
+			) КАК Рег
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "20"
+				ИЛИ Рег.Счет.Код = "17"
+				ИЛИ Рег.Счет.Код = "401"
+				ИЛИ Рег.Счет.Код = "441"
+				ИЛИ Рег.Счет.Код = "442"
+				ИЛИ Рег.Счет.Код = "443"
+				ИЛИ Рег.Счет.Код = "6411"
+				ИЛИ Рег.Счет.Код = "6415"
+				ИЛИ Рег.Счет.Код = "651"
+				ИЛИ Рег.Счет.Код = "661"
+				ИЛИ Рег.Счет.Код = "671"
+			ТОГДА "Equity"
+		КОГДА Рег.Счет.Код = "382"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1 = &amp;НДС6412
+						ТОГДА "Net non-trade receivables/payables: VAT"
+					ИНАЧЕ "Net non-trade receivables/payables: VAT prov"
+				КОНЕЦ
+		КОГДА Рег.Счет.Код = "474"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1 В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ ВЫБОР
+							КОГДА Рег.Субконто2 = ЗНАЧЕНИЕ(Справочник.НоменклатурныеГруппы.ДляРаспределенияПоКультурам)
+								ТОГДА "Other non trade receivables/payables"
+							ИНАЧЕ "Trade payables 3rd party"
+						КОНЕЦ
+				КОНЕЦ
+		КОГДА Рег.Счет.Код = "475"
+			ТОГДА ВЫБОР
+					КОГДА Рег.Субконто1 В ИЕРАРХИИ (&amp;ПапкаГруппы)
+						ТОГДА "Intercompany accounts/short term loans"
+					ИНАЧЕ ВЫБОР
+							КОГДА Рег.Субконто2 = ЗНАЧЕНИЕ(Справочник.НоменклатурныеГруппы.ДляРаспределенияПоКультурам)
+								ТОГДА "Other non trade receivables/payables"
+							ИНАЧЕ "Prepayments / advances"
+						КОНЕЦ
+				КОНЕЦ
+		КОГДА Рег.Счет.Код = "54"
+			ТОГДА "Equity"
+		КОГДА ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "10"
+				ИЛИ ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "11"
+				ИЛИ ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "12"
+				ИЛИ ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "13"
+				ИЛИ ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "15"
+			ТОГДА "Movable assets"
+		КОГДА ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "31"
+				ИЛИ ПОДСТРОКА(Рег.Счет.Код, 1, 2) = "33"
+			ТОГДА "Short term banks loans / curr.accounts: CASH"
+		КОГДА Рег.Счет.Код = "6413"
+			ТОГДА "Other non trade receivables/payables"
+		ИНАЧЕ "Other non trade receivables/payables"
+	КОНЕЦ,
+	Рег.Счет,
+	ВЫБОР
+		КОГДА Рег.Счет.ВалютныйПоЛокальномуУчету
+				И Рег.Валюта = ЗНАЧЕНИЕ(Справочник.Валюты.Гривна)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.Валюты.Доллар)
+		ИНАЧЕ Рег.Валюта
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА Рег.Счет.Код = "311"
+				ИЛИ Рег.Счет.Код = "312"
+				ИЛИ Рег.Счет.Код = "315"
+				ИЛИ Рег.Счет.Код = "316"
+			ТОГДА Рег.Субконто1.Банк
+		КОГДА Рег.Счет.Код = "474"
+				ИЛИ Рег.Счет.Код = "475"
+			ТОГДА Рег.Субконто1
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА Рег.Счет.Код = "311"
+				ИЛИ Рег.Счет.Код = "312"
+				ИЛИ Рег.Счет.Код = "315"
+				ИЛИ Рег.Счет.Код = "316"
+			ТОГДА "_" + Рег.Субконто1.Банк.КодПоЕДРПОУ
+		КОГДА Рег.Счет.Код = "474"
+				ИЛИ Рег.Счет.Код = "475"
+			ТОГДА "_" + Рег.Субконто1.КодПоЕДРПОУ
+		ИНАЧЕ ""
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА Рег.Счет.Код = "382"
+				ИЛИ Рег.Счет.Код = "474"
+				ИЛИ Рег.Счет.Код = "475"
+			ТОГДА Рег.Субконто2
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.НоменклатурныеГруппы.ПустаяСсылка)
+	КОНЕЦ,
+	ЗНАЧЕНИЕ(Перечисление.ТипДоговора.ПустаяСсылка),
+	Рег.СуммаОстаток,
+	Рег.ВалютнаяСуммаОстаток,
+	Рег.КоличествоОстаток
+ИЗ
+	РегистрБухгалтерии.МСФО.Остатки(
+			&amp;Дата,
+			Счет.Код = "401"
+				ИЛИ Счет.Код = "17"
+				ИЛИ Счет.Код = "378"
+				ИЛИ Счет.Код = "382"
+				ИЛИ Счет.Код = "441"
+				ИЛИ Счет.Код = "442"
+				ИЛИ Счет.Код = "443"
+				ИЛИ Счет.Код = "471"
+				ИЛИ Счет.Код = "474"
+				ИЛИ Счет.Код = "475"
+				ИЛИ Счет.Код = "477"
+				ИЛИ Счет.Код = "54"
+				ИЛИ Счет.Код = "3721"
+				ИЛИ Счет.Код = "3722"
+				ИЛИ Счет.Код = "3773"
+				ИЛИ Счет.Код = "6411"
+				ИЛИ Счет.Код = "6413"
+				ИЛИ Счет.Код = "6414"
+				ИЛИ Счет.Код = "6415"
+				ИЛИ Счет.Код = "6416"
+				ИЛИ Счет.Код = "671"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "10"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "11"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "12"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "13"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "15"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "20"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "31"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "33"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 3) = "642"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "65"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 2) = "66",
+			,
+			) КАК Рег
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Equity",
+	Рег.Счет,
+	ВЫБОР
+		КОГДА Рег.Счет.ВалютныйПоЛокальномуУчету
+				И Рег.Валюта = ЗНАЧЕНИЕ(Справочник.Валюты.Гривна)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.Валюты.Доллар)
+		ИНАЧЕ Рег.Валюта
+	КОНЕЦ,
+	ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка),
+	"",
+	ЗНАЧЕНИЕ(Справочник.НоменклатурныеГруппы.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Перечисление.ТипДоговора.ПустаяСсылка),
+	Рег.СуммаОстаток,
+	Рег.ВалютнаяСуммаОстаток,
+	Рег.КоличествоОстаток
+ИЗ
+	РегистрБухгалтерии.МСФО.Остатки(
+			&amp;Дата,
+			ПОДСТРОКА(Счет.Код, 1, 1) = "7"
+				ИЛИ ПОДСТРОКА(Счет.Код, 1, 1) = "9",
+			,
+			) КАК Рег</query>
+		</dataSet>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>Дата</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ПапкаГруппы</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Папка группы</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ВидыСубконтоХозрасчетные</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Контрагенты</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Организации</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Номенклатура</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>СписокСчетовИсключений</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Список счетов исключений</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfAccountsRef.МСФО</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>НДС6412</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>НДС6412</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ВидыНалоговойДеятельности</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ОтчетПроизводстваЗаСмену</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПлатежныйОрдерСписаниеДенежныхСредств</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Склады</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:EnumRef.ВидыРасчетовСКонтрагентамиНалоговыйУчет</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПередачаОС</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.БиологическиеАктивы</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.СписаниеТоваров</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.АвансовыйОтчет</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ГТДИмпорт</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ОсновныеСредства</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ОприходованиеТоваров</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПлатежноеПоручениеИсходящее</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПередачаМалоценныхАктивовВЭксплуатацию</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ДокументРасчетовСКонтрагентом</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ФинансовыеИнвестиции</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПлатежныйОрдерПоступлениеДенежныхСредств</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ЦенныеБумаги</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НематериальныеАктивы</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ДоговорыКонтрагентов</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.РасходныйКассовыйОрдер</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ДоходыБудущихПериодов</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.АктОбОказанииПроизводственныхУслуг</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПоступлениеНМА</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.КорректировкаДолга</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПоступлениеТоваровУслуг</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НазначениеЦелевыхСредств</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ПрочиеНеоборотныеАктивы</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ВозвратТоваровОтПокупателя</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.СчетНаОплатуПокупателю</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПередачаТоваров</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПлатежноеПоручениеВходящее</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.БанковскиеСчета</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ОтчетКомиссионераОПродажах</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ОтчетКомитентуОПродажах</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ПодразделенияОрганизаций</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ВводНачальныхОстатков</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПередачаНМА</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ОтчетОРозничныхПродажах</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НоменклатурныеГруппы</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.КомплектацияНоменклатуры</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ОбъектыСтроительства</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПриходныйКассовыйОрдер</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Субконто</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПоступлениеИзПереработки</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиДоходов</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Контрагенты</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ВводНачальныхОстатковМалоценныхАктивовВЭксплуатации</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.РасходыБудущихПериодов</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Гарантии</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.РеализацияУслугПоПереработке</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Резервы</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:EnumRef.ГруппыОС_МСФО</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.РеализацияТоваровУслуг</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ВозвратТоваровПоставщику</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиЗатрат</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПартияМалоценныхАктивовВЭксплуатации</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.КонтрактныеОбязательства</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НазначенияИспользования</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Организации</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.СчетНаОплатуПоставщика</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:EnumRef.СтавкиНДС</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиНеоперационныхРасходов</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:EnumRef.ВидыИспользованияАмортизации</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиОтсроченныхНалоговыхАктивовИОбязательств</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиНалоговыхДеклараций</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Номенклатура</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НалоговыеНазначенияАктивовИЗатрат</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.Партия</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ОбособленныеПодразделенияОрганизаций</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НалоговыеГруппыОсновныхСредств</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПоступлениеДопРасходов</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Налоги</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьяФинансовыхРезультатов</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиДвиженияДенежныхСредств</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПеремещениеТоваров</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ФизическиеЛица</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Статья</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Счет</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Валюта</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Контрагент</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТМЦ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаДол</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаГрн</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Количество</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТипДоговора</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КонтрагентЕДРПОУ</field>
+		</item>
+	</selection>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Статья</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>Счет</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>Контрагент</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ТМЦ</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+			</dcscor:item>
+		</outputParameters>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

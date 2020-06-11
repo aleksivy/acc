@@ -1,0 +1,9 @@
+﻿0088c24a-c3fb-4237-a9c5-ce8728df3d16-->und\0088c24a-c3fb-4237-a9c5-ce8728df3d16
+0088c24a-c3fb-4237-a9c5-ce8728df3d16.0-->und\0088c24a-c3fb-4237-a9c5-ce8728df3d16.0
+295decf2-ebbd-4324-9e33-39a610925e28-->und\295decf2-ebbd-4324-9e33-39a610925e28
+copyinfo-->und\copyinfo
+ebeee6bd-b1ea-49d3-9feb-d04b8fe28796-->und\ebeee6bd-b1ea-49d3-9feb-d04b8fe28796
+ebeee6bd-b1ea-49d3-9feb-d04b8fe28796.0-->Form\ФормаОтчета
+root-->und\root
+version-->und\version
+versions-->und\versions

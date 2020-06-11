@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счет</dataPath>
+				<field>Счет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто1</dataPath>
+				<field>Субконто1</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто2</dataPath>
+				<field>Субконто2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто3</dataPath>
+				<field>Субконто3</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Амортизируется</dataPath>
+				<field>Амортизируется</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Валюта</dataPath>
+				<field>Валюта</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДеятельностиНДС</dataPath>
+				<field>ВидДеятельностиНДС</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВозвратнаяТара</dataPath>
+				<field>ВозвратнаяТара</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДляХозяйственнойДеятельности</dataPath>
+				<field>ДляХозяйственнойДеятельности</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорКонтрагента</dataPath>
+				<field>ДоговорКонтрагента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Контрагент</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сделка</dataPath>
+				<field>Сделка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Событие</dataPath>
+				<field>Событие</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтавкаНДС</dataPath>
+				<field>СтавкаНДС</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКон6441</dataPath>
+				<field>СуммаКон6441</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>предоплаты сч. 6441 исх. Остаток</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКон6442</dataPath>
+				<field>СуммаКон6442</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>неполученные НН, сч. 6442 исх.остаток</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНач6441</dataPath>
+				<field>СуммаНач6441</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>предоплаты сч. 6441 вх.остаток</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНач6442</dataPath>
+				<field>СуммаНач6442</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>неполученные НН, сч. 6442 вх.остаток</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНДСПриход</dataPath>
+				<field>СуммаНДСПриход</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма НДС</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаОборот6441</dataPath>
+				<field>СуммаОборот6441</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>предоплаты сч. 6441 динамика</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаОборот6442</dataPath>
+				<field>СуммаОборот6442</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>неполученные НН, сч. 6442 динамика</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПриход</dataPath>
+				<field>СуммаПриход</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Приход, грн.</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПризнано</dataPath>
+				<field>СуммаПризнано</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Итого расчетно признано НК</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НДС</dataPath>
+				<field>НДС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>стр. 10.1, 15.1 рег."НДС налоговый кредит"</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Разница</dataPath>
+				<field>Разница</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Разница</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	НДСНалоговыйКредит.ДоговорКонтрагента.Владелец КАК Контрагент,
+	НДСНалоговыйКредит.ДоговорКонтрагента,
+	ВЫБОР
+		КОГДА НДСНалоговыйКредит.СтатьяДекларацииНДСНалоговыйКредит = ЗНАЧЕНИЕ(Справочник.СтатьиНалоговыхДеклараций.НДС_НКПропорциональноВклВКредит)
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.ПропорциональноОблагаемая)
+		КОГДА НДСНалоговыйКредит.СтатьяДекларацииНДСНалоговыйКредит = ЗНАЧЕНИЕ(Справочник.СтатьиНалоговыхДеклараций.НДС_НКПропорциональноВклВКредитПоставкаОФ)
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.ПропорциональноОблагаемая)
+		КОГДА НДСНалоговыйКредит.ДляОперацийОблагаемыхНДС
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.Облагаемая)
+		ИНАЧЕ ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.Необлагаемая)
+	КОНЕЦ КАК ВидДеятельностиНДС,
+	НДСНалоговыйКредит.СтавкаНДС КАК СтавкаНДС,
+	НДСНалоговыйКредит.ДляХозяйственнойДеятельности КАК ДляХозяйственнойДеятельности,
+	СУММА(НДСНалоговыйКредит.НДС) КАК НДС
+ПОМЕСТИТЬ НДСНалоговыйКредит
+ИЗ
+	РегистрНакопления.НДСНалоговыйКредит КАК НДСНалоговыйКредит
+ГДЕ
+	НДСНалоговыйКредит.Период &gt;= &amp;НачалоПериода
+	И НДСНалоговыйКредит.Период &lt;= &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	НДСНалоговыйКредит.ДоговорКонтрагента.Владелец,
+	НДСНалоговыйКредит.ДоговорКонтрагента,
+	ВЫБОР
+		КОГДА НДСНалоговыйКредит.СтатьяДекларацииНДСНалоговыйКредит = ЗНАЧЕНИЕ(Справочник.СтатьиНалоговыхДеклараций.НДС_НКПропорциональноВклВКредит)
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.ПропорциональноОблагаемая)
+		КОГДА НДСНалоговыйКредит.СтатьяДекларацииНДСНалоговыйКредит = ЗНАЧЕНИЕ(Справочник.СтатьиНалоговыхДеклараций.НДС_НКПропорциональноВклВКредитПоставкаОФ)
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.ПропорциональноОблагаемая)
+		КОГДА НДСНалоговыйКредит.ДляОперацийОблагаемыхНДС
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.Облагаемая)
+		ИНАЧЕ ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.Необлагаемая)
+	КОНЕЦ,
+	НДСНалоговыйКредит.СтавкаНДС,
+	НДСНалоговыйКредит.ДляХозяйственнойДеятельности
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	_6441.Субконто1 КАК Контрагент,
+	_6441.Субконто2 КАК ДоговорКонтрагента,
+	_6441.СуммаНачальныйОстатокКт КАК СуммаНач6441,
+	-_6441.СуммаОборот КАК СуммаОборот6441,
+	_6441.СуммаКонечныйОстатокКт КАК СуммаКон6441
+ПОМЕСТИТЬ _6441
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, Период, , Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредит), , ) КАК _6441
+
+ИНДЕКСИРОВАТЬ ПО
+	Контрагент,
+	ДоговорКонтрагента
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	_6442.Субконто1 КАК Контрагент,
+	_6442.Субконто2 КАК ДоговорКонтрагента,
+	_6442.СуммаНачальныйОстатокДт КАК СуммаНач6442,
+	_6442.СуммаОборот КАК СуммаОборот6442,
+	_6442.СуммаКонечныйОстатокДт КАК СуммаКон6442
+ПОМЕСТИТЬ _6442
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, Период, , Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредитНеподтвержденный), , ) КАК _6442
+
+ИНДЕКСИРОВАТЬ ПО
+	Контрагент,
+	ДоговорКонтрагента
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(_6441.Контрагент, _6442.Контрагент) КАК Контрагент,
+	ЕСТЬNULL(_6441.ДоговорКонтрагента, _6442.ДоговорКонтрагента) КАК ДоговорКонтрагента,
+	ЕСТЬNULL(_6441.СуммаНач6441, 0) КАК СуммаНач6441,
+	ЕСТЬNULL(_6441.СуммаОборот6441, 0) КАК СуммаОборот6441,
+	ЕСТЬNULL(_6441.СуммаКон6441, 0) КАК СуммаКон6441,
+	ЕСТЬNULL(_6442.СуммаНач6442, 0) КАК СуммаНач6442,
+	ЕСТЬNULL(_6442.СуммаОборот6442, 0) КАК СуммаОборот6442,
+	ЕСТЬNULL(_6442.СуммаКон6442, 0) КАК СуммаКон6442
+ПОМЕСТИТЬ _644
+ИЗ
+	_6441 КАК _6441
+		ПОЛНОЕ СОЕДИНЕНИЕ _6442 КАК _6442
+		ПО _6441.Контрагент = _6442.Контрагент
+			И _6441.ДоговорКонтрагента = _6442.ДоговорКонтрагента
+
+ИНДЕКСИРОВАТЬ ПО
+	Контрагент,
+	ДоговорКонтрагента
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Приход.ДоговорКонтрагента.Владелец КАК Контрагент,
+	Приход.ДоговорКонтрагента КАК ДоговорКонтрагента,
+	Приход.ВидДеятельностиНДС,
+	Приход.ДляХозяйственнойДеятельности,
+	Приход.СтавкаНДС,
+	СУММА(Приход.СуммаВзаиморасчетовОборот) КАК СуммаСНДСПриход,
+	СУММА(ВЫБОР
+			КОГДА Приход.ВидДеятельностиНДС = ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.ПропорциональноОблагаемая)
+				ТОГДА Приход.СуммаНДСПропорциональноОборот
+			ИНАЧЕ Приход.СуммаНДСОборот
+		КОНЕЦ) КАК СуммаНДСПриход
+ПОМЕСТИТЬ Приход
+ИЗ
+	РегистрНакопления.ПриобретенияНалоговыйУчет.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, , ) КАК Приход
+ГДЕ
+	ТИПЗНАЧЕНИЯ(Приход.Регистратор) = ТИП(Документ.ПоступлениеТоваровУслуг)
+
+СГРУППИРОВАТЬ ПО
+	Приход.ДоговорКонтрагента.Владелец,
+	Приход.ДоговорКонтрагента,
+	Приход.ВидДеятельностиНДС,
+	Приход.ДляХозяйственнойДеятельности,
+	Приход.СтавкаНДС
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(Приход.Контрагент, _644.Контрагент) КАК Контрагент,
+	ЕСТЬNULL(Приход.ДоговорКонтрагента, _644.ДоговорКонтрагента) КАК ДоговорКонтрагента,
+	Приход.ВидДеятельностиНДС,
+	Приход.ДляХозяйственнойДеятельности,
+	Приход.СтавкаНДС,
+	ЕСТЬNULL(Приход.СуммаСНДСПриход, 0) - ЕСТЬNULL(Приход.СуммаНДСПриход, 0) КАК СуммаПриход,
+	ЕСТЬNULL(Приход.СуммаНДСПриход, 0) КАК СуммаНДСПриход,
+	ЕСТЬNULL(_644.СуммаНач6441, 0) КАК СуммаНач6441,
+	ЕСТЬNULL(_644.СуммаОборот6441, 0) КАК СуммаОборот6441,
+	ЕСТЬNULL(_644.СуммаКон6441, 0) КАК СуммаКон6441,
+	ЕСТЬNULL(_644.СуммаНач6442, 0) КАК СуммаНач6442,
+	ЕСТЬNULL(_644.СуммаОборот6442, 0) КАК СуммаОборот6442,
+	ЕСТЬNULL(_644.СуммаКон6442, 0) КАК СуммаКон6442,
+	ЕСТЬNULL(Приход.СуммаНДСПриход, 0) + ЕСТЬNULL(_644.СуммаОборот6441, 0) - ЕСТЬNULL(_644.СуммаОборот6442, 0) КАК СуммаПризнано
+ПОМЕСТИТЬ Врем
+ИЗ
+	Приход КАК Приход
+		ПОЛНОЕ СОЕДИНЕНИЕ _644 КАК _644
+		ПО Приход.Контрагент = _644.Контрагент
+			И Приход.ДоговорКонтрагента = _644.ДоговорКонтрагента
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(Врем.Контрагент, НДСНалоговыйКредит.Контрагент) КАК Контрагент,
+	ЕСТЬNULL(Врем.ДоговорКонтрагента, НДСНалоговыйКредит.ДоговорКонтрагента) КАК ДоговорКонтрагента,
+	ЕСТЬNULL(Врем.ВидДеятельностиНДС, НДСНалоговыйКредит.ВидДеятельностиНДС) КАК ВидДеятельностиНДС,
+	ЕСТЬNULL(Врем.ДляХозяйственнойДеятельности, НДСНалоговыйКредит.ДляХозяйственнойДеятельности) КАК ДляХозяйственнойДеятельности,
+	ЕСТЬNULL(Врем.СтавкаНДС, НДСНалоговыйКредит.СтавкаНДС) КАК СтавкаНДС,
+	ЕСТЬNULL(Врем.СуммаПриход, 0) КАК СуммаПриход,
+	ЕСТЬNULL(Врем.СуммаНДСПриход, 0) КАК СуммаНДСПриход,
+	ЕСТЬNULL(Врем.СуммаНач6441, 0) КАК СуммаНач6441,
+	ЕСТЬNULL(Врем.СуммаОборот6441, 0) КАК СуммаОборот6441,
+	ЕСТЬNULL(Врем.СуммаКон6441, 0) КАК СуммаКон6441,
+	ЕСТЬNULL(Врем.СуммаНач6442, 0) КАК СуммаНач6442,
+	ЕСТЬNULL(Врем.СуммаОборот6442, 0) КАК СуммаОборот6442,
+	ЕСТЬNULL(Врем.СуммаКон6442, 0) КАК СуммаКон6442,
+	ЕСТЬNULL(Врем.СуммаПризнано, 0) КАК СуммаПризнано,
+	ЕСТЬNULL(НДСНалоговыйКредит.НДС, 0) КАК НДС,
+	ЕСТЬNULL(НДСНалоговыйКредит.НДС, 0) - ЕСТЬNULL(Врем.СуммаПризнано, 0) КАК Разница
+ИЗ
+	Врем КАК Врем
+		ПОЛНОЕ СОЕДИНЕНИЕ НДСНалоговыйКредит КАК НДСНалоговыйКредит
+		ПО Врем.Контрагент = НДСНалоговыйКредит.Контрагент
+			И Врем.ДоговорКонтрагента = НДСНалоговыйКредит.ДоговорКонтрагента
+			И (Врем.ВидДеятельностиНДС = НДСНалоговыйКредит.ВидДеятельностиНДС
+				ИЛИ Врем.ВидДеятельностиНДС ЕСТЬ NULL )
+			И (Врем.СтавкаНДС = НДСНалоговыйКредит.СтавкаНДС
+				ИЛИ Врем.СтавкаНДС ЕСТЬ NULL )
+			И (Врем.ДляХозяйственнойДеятельности = НДСНалоговыйКредит.ДляХозяйственнойДеятельности
+				ИЛИ Врем.ДляХозяйственнойДеятельности ЕСТЬ NULL )</query>
+		</dataSet>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Контрагент</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДоговорКонтрагента</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидДеятельностиНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДляХозяйственнойДеятельности</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СтавкаНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПриход</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНДСПриход</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНач6441</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаКон6441</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаОборот6441</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНач6442</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаКон6442</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаОборот6442</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПризнано</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Разница</field>
+		</item>
+	</selection>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Контрагент</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ДоговорКонтрагента</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ВидДеятельностиНДС</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ДляХозяйственнойДеятельности</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>СтавкаНДС</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
