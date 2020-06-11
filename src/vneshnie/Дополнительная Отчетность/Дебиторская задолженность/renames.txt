@@ -1,0 +1,11 @@
+﻿1337fd20-893f-490f-8f43-7ffd27b12ca0-->und\1337fd20-893f-490f-8f43-7ffd27b12ca0
+8635aa8d-ccef-4e1b-8c2a-addaf70073dd-->und\8635aa8d-ccef-4e1b-8c2a-addaf70073dd
+8635aa8d-ccef-4e1b-8c2a-addaf70073dd.0-->Form\ФормаОтчета
+c09cbdde-1c74-4750-be6e-bb2a9e7c0463.0\info-->und\c09cbdde-1c74-4750-be6e-bb2a9e7c0463.0\info
+c09cbdde-1c74-4750-be6e-bb2a9e7c0463.0\text-->ObjectModule.bsl
+copyinfo-->und\copyinfo
+ff0c339f-e825-46ab-8f64-b2416b682ce7-->und\ff0c339f-e825-46ab-8f64-b2416b682ce7
+ff0c339f-e825-46ab-8f64-b2416b682ce7.0-->und\ff0c339f-e825-46ab-8f64-b2416b682ce7.0
+root-->und\root
+version-->und\version
+versions-->und\versions

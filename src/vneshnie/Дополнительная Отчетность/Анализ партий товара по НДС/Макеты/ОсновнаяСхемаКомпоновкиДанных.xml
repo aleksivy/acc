@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счет</dataPath>
+				<field>Счет</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<account xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</account>
+					<accountTypeExpression xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Счет.Вид</accountTypeExpression>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто1</dataPath>
+				<field>Субконто1</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто2</dataPath>
+				<field>Субконто2</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто3</dataPath>
+				<field>Субконто3</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Валюта</dataPath>
+				<field>Валюта</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтавкаНДС</dataPath>
+				<field>СтавкаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаОстатокДт</dataPath>
+				<field>СуммаОстатокДт</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоОстатокДт</dataPath>
+				<field>КоличествоОстатокДт</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ПоступлениеТоваровУслугТовары.Ссылка,
+	ПоступлениеТоваровУслугТовары.СтавкаНДС,
+	ПоступлениеТоваровУслугТовары.НалоговоеНазначение,
+	ХозрасчетныйОстатки.Счет,
+	ХозрасчетныйОстатки.Субконто1,
+	ХозрасчетныйОстатки.Субконто2,
+	ХозрасчетныйОстатки.Субконто3,
+	ХозрасчетныйОстатки.СуммаОстатокДт,
+	ХозрасчетныйОстатки.КоличествоОстатокДт
+ИЗ
+	Документ.ПоступлениеТоваровУслуг.Товары КАК ПоступлениеТоваровУслугТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрБухгалтерии.Хозрасчетный.Остатки(&amp;Период, , , ) КАК ХозрасчетныйОстатки
+		ПО ПоступлениеТоваровУслугТовары.Ссылка = ХозрасчетныйОстатки.Субконто3
+ГДЕ
+	ХозрасчетныйОстатки.Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ТоварыНаСкладе)
+	И ХозрасчетныйОстатки.Субконто1 = &amp;ТМЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Партия.Ссылка,
+	NULL,
+	Партия.НалоговоеНазначение,
+	ХозрасчетныйОстатки.Счет,
+	ХозрасчетныйОстатки.Субконто1,
+	ХозрасчетныйОстатки.Субконто2,
+	ХозрасчетныйОстатки.Субконто3,
+	ХозрасчетныйОстатки.СуммаОстатокДт,
+	ХозрасчетныйОстатки.КоличествоОстатокДт
+ИЗ
+	Документ.Партия КАК Партия
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрБухгалтерии.Хозрасчетный.Остатки(&amp;Период, , , ) КАК ХозрасчетныйОстатки
+		ПО Партия.Ссылка = ХозрасчетныйОстатки.Субконто3
+ГДЕ
+	ХозрасчетныйОстатки.Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ТоварыНаСкладе)
+	И ХозрасчетныйОстатки.Субконто1 = &amp;ТМЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОприходованиеТоваровТовары.Ссылка,
+	NULL,
+	ОприходованиеТоваровТовары.НалоговоеНазначение,
+	ХозрасчетныйОстатки.Счет,
+	ХозрасчетныйОстатки.Субконто1,
+	ХозрасчетныйОстатки.Субконто2,
+	ХозрасчетныйОстатки.Субконто3,
+	ХозрасчетныйОстатки.СуммаОстатокДт,
+	ХозрасчетныйОстатки.КоличествоОстатокДт
+ИЗ
+	Документ.ОприходованиеТоваров.Товары КАК ОприходованиеТоваровТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрБухгалтерии.Хозрасчетный.Остатки(&amp;Период, , , ) КАК ХозрасчетныйОстатки
+		ПО ОприходованиеТоваровТовары.Ссылка = ХозрасчетныйОстатки.Субконто3
+ГДЕ
+	ХозрасчетныйОстатки.Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ТоварыНаСкладе)
+	И ХозрасчетныйОстатки.Субконто1 = &amp;ТМЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПеремещениеТоваровТовары.Ссылка,
+	NULL,
+	ПеремещениеТоваровТовары.НалоговоеНазначение,
+	ХозрасчетныйОстатки.Счет,
+	ХозрасчетныйОстатки.Субконто1,
+	ХозрасчетныйОстатки.Субконто2,
+	ХозрасчетныйОстатки.Субконто3,
+	ХозрасчетныйОстатки.СуммаОстатокДт,
+	ХозрасчетныйОстатки.КоличествоОстатокДт
+ИЗ
+	Документ.ПеремещениеТоваров.Товары КАК ПеремещениеТоваровТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрБухгалтерии.Хозрасчетный.Остатки КАК ХозрасчетныйОстатки
+		ПО ПеремещениеТоваровТовары.Ссылка = ХозрасчетныйОстатки.Субконто3
+ГДЕ
+	ХозрасчетныйОстатки.Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ТоварыНаСкладе)
+	И ХозрасчетныйОстатки.Субконто1 = &amp;ТМЦ</query>
+		</dataSet>
+		<totalField>
+			<dataPath>КоличествоОстатокДт</dataPath>
+			<expression>Сумма(КоличествоОстатокДт)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаОстатокДт</dataPath>
+			<expression>Сумма(СуммаОстатокДт)</expression>
+		</totalField>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ТМЦ</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>ТМЦ</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Номенклатура</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаОстатокДт</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоОстатокДт</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НалоговоеНазначение</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СтавкаНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Субконто1</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Субконто2</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Субконто3</field>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Период</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ТМЦ</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Ссылка</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

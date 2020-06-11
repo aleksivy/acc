@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаПоследняя</dataPath>
+				<field>ДатаПоследняя</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Срок сдачи НН</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ДФ=dd.MM.yyyy</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПоДокамСвернуто</dataPath>
+				<field>СуммаПоДокамСвернуто</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма по документам свернуто</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счет</dataPath>
+				<field>Счет</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Просрочено</dataPath>
+				<field>Просрочено</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Проср.</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>БЛ=; БИ=Да</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто1</dataPath>
+				<field>Субконто1</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Контрагент</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаОстаток</dataPath>
+				<field>СуммаОстаток</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаток на 6442</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто2</dataPath>
+				<field>Субконто2</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто3</dataPath>
+				<field>Субконто3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПоДоку</dataPath>
+				<field>СуммаПоДоку</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма по документу</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПоРасчетным</dataPath>
+				<field>ПоРасчетным</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>По расч. докам</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>БЛ=; БИ=Да</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммыРавны</dataPath>
+				<field>СуммыРавны</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Суммы равны</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Валюта</dataPath>
+				<field>Валюта</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Период</dataPath>
+				<field>Период</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Период</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ДФ=dd.MM.yyyy</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Рег.Субконто1,
+	Рег.Субконто2,
+	Рег.СуммаОстаток
+ПОМЕСТИТЬ ПоДоговоруВЦелом
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.Остатки(КОНЕЦПЕРИОДА(&amp;ДатаОтчета, ДЕНЬ), Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредитНеподтвержденный), , НЕ Субконто2.ВедениеВзаиморасчетов = ЗНАЧЕНИЕ(Перечисление.ВедениеВзаиморасчетовПоДоговорам.ПоРасчетнымДокументам)) КАК Рег
+ГДЕ
+	Рег.СуммаОстаток &gt; 10
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.Период,
+	Рег.Регистратор,
+	Рег.Субконто1,
+	Рег.Субконто2,
+	Рег.СуммаНачальныйОстаток,
+	Рег.СуммаОборот,
+	Рег.СуммаКонечныйОстаток
+ПОМЕСТИТЬ ОстаткиПоДокам
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ОстаткиИОбороты(
+			ДАТАВРЕМЯ(2017, 6, 1),
+			КОНЕЦПЕРИОДА(&amp;ДатаОтчета, ДЕНЬ),
+			Регистратор,
+			,
+			Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредитНеподтвержденный),
+			,
+			Субконто2 В
+				(ВЫБРАТЬ
+					ПоДоговоруВЦелом.Субконто2
+				ИЗ
+					ПоДоговоруВЦелом КАК ПоДоговоруВЦелом)) КАК Рег
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОстаткиПоДокам.Субконто1,
+	ОстаткиПоДокам.Субконто2,
+	МАКСИМУМ(ОстаткиПоДокам.Период) КАК ПериодМакс
+ПОМЕСТИТЬ ПериодыМакс
+ИЗ
+	ОстаткиПоДокам КАК ОстаткиПоДокам
+ГДЕ
+	ОстаткиПоДокам.СуммаКонечныйОстаток &lt;= 0
+
+СГРУППИРОВАТЬ ПО
+	ОстаткиПоДокам.Субконто1,
+	ОстаткиПоДокам.Субконто2
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОстаткиПоДокам.Период,
+	ОстаткиПоДокам.Регистратор,
+	ОстаткиПоДокам.Субконто1,
+	ОстаткиПоДокам.Субконто2,
+	ОстаткиПоДокам.СуммаОборот,
+	ОстаткиПоДокам.СуммаКонечныйОстаток
+ПОМЕСТИТЬ НужныеДоки1
+ИЗ
+	ОстаткиПоДокам КАК ОстаткиПоДокам
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ПериодыМакс КАК ПериодыМакс
+		ПО ОстаткиПоДокам.Субконто1 = ПериодыМакс.Субконто1
+			И ОстаткиПоДокам.Субконто2 = ПериодыМакс.Субконто2
+			И ОстаткиПоДокам.Период &gt; ПериодыМакс.ПериодМакс
+ГДЕ
+	ОстаткиПоДокам.Регистратор &lt;&gt; НЕОПРЕДЕЛЕНО
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОстаткиПоДокам.Период,
+	ОстаткиПоДокам.Регистратор,
+	ОстаткиПоДокам.Субконто1,
+	ОстаткиПоДокам.Субконто2,
+	ОстаткиПоДокам.СуммаОборот,
+	ОстаткиПоДокам.СуммаКонечныйОстаток
+ПОМЕСТИТЬ НужныеДоки2
+ИЗ
+	ОстаткиПоДокам КАК ОстаткиПоДокам
+		ЛЕВОЕ СОЕДИНЕНИЕ ПериодыМакс КАК ПериодыМакс
+		ПО ОстаткиПоДокам.Субконто1 = ПериодыМакс.Субконто1
+			И ОстаткиПоДокам.Субконто2 = ПериодыМакс.Субконто2
+			И ОстаткиПоДокам.Период &gt; ПериодыМакс.ПериодМакс
+		ЛЕВОЕ СОЕДИНЕНИЕ НужныеДоки1 КАК НужныеДоки1
+		ПО ОстаткиПоДокам.Субконто1 = НужныеДоки1.Субконто1
+			И ОстаткиПоДокам.Субконто2 = НужныеДоки1.Субконто2
+ГДЕ
+	ОстаткиПоДокам.Регистратор &lt;&gt; НЕОПРЕДЕЛЕНО
+	И ПериодыМакс.ПериодМакс ЕСТЬ NULL
+	И НужныеДоки1.Субконто2 ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НужныеДоки.Период,
+	НужныеДоки.Регистратор,
+	НужныеДоки.Субконто1,
+	НужныеДоки.Субконто2,
+	НужныеДоки.СуммаОборот,
+	НужныеДоки.СуммаКонечныйОстаток
+ПОМЕСТИТЬ НужныеДоки
+ИЗ
+	НужныеДоки1 КАК НужныеДоки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	НужныеДоки.Период,
+	НужныеДоки.Регистратор,
+	НужныеДоки.Субконто1,
+	НужныеДоки.Субконто2,
+	НужныеДоки.СуммаОборот,
+	НужныеДоки.СуммаКонечныйОстаток
+ИЗ
+	НужныеДоки2 КАК НужныеДоки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НужныеДоки.Субконто1,
+	НужныеДоки.Субконто2,
+	СУММА(НужныеДоки.СуммаОборот) КАК СуммаОборот
+ПОМЕСТИТЬ НужныеДокиСвернуто
+ИЗ
+	НужныеДоки КАК НужныеДоки
+
+СГРУППИРОВАТЬ ПО
+	НужныеДоки.Субконто1,
+	НужныеДоки.Субконто2
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЛОЖЬ КАК ПоРасчетным,
+	ПоДоговоруВЦелом.Субконто1,
+	ПоДоговоруВЦелом.Субконто2,
+	ПоДоговоруВЦелом.СуммаОстаток,
+	ВЫБОР
+		КОГДА ПоДоговоруВЦелом.СуммаОстаток = ЕСТЬNULL(НужныеДокиСвернуто.СуммаОборот, 0)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК СуммыРавны,
+	ЕСТЬNULL(НужныеДокиСвернуто.СуммаОборот, 0) КАК СуммаПоДокамСвернуто,
+	ЕСТЬNULL(НужныеДоки.Период, ДАТАВРЕМЯ(1, 1, 1)) КАК Период,
+	ЕСТЬNULL(НужныеДоки.Регистратор, НЕОПРЕДЕЛЕНО) КАК Регистратор,
+	ЕСТЬNULL(НужныеДоки.СуммаОборот, 0) КАК СуммаПоДоку
+ПОМЕСТИТЬ Врем1
+ИЗ
+	ПоДоговоруВЦелом КАК ПоДоговоруВЦелом
+		ЛЕВОЕ СОЕДИНЕНИЕ НужныеДокиСвернуто КАК НужныеДокиСвернуто
+		ПО ПоДоговоруВЦелом.Субконто1 = НужныеДокиСвернуто.Субконто1
+			И ПоДоговоруВЦелом.Субконто2 = НужныеДокиСвернуто.Субконто2
+		ЛЕВОЕ СОЕДИНЕНИЕ НужныеДоки КАК НужныеДоки
+		ПО ПоДоговоруВЦелом.Субконто1 = НужныеДоки.Субконто1
+			И ПоДоговоруВЦелом.Субконто2 = НужныеДоки.Субконто2
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИСТИНА КАК ПоРасчетным,
+	Рег.Субконто1,
+	Рег.Субконто2,
+	Рег.СуммаОстаток,
+	ИСТИНА КАК СуммыРавны,
+	Рег.СуммаОстаток КАК СуммаПоДокамСвернуто,
+	Рег.Субконто3.Дата КАК Период,
+	Рег.Субконто3 КАК Регистратор,
+	Рег.СуммаОстаток КАК СуммаПоДоку
+ПОМЕСТИТЬ ПоРасчетнымДокументам
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.Остатки(КОНЕЦПЕРИОДА(&amp;ДатаОтчета, ДЕНЬ), Счет = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыйКредитНеподтвержденный), , Субконто2.ВедениеВзаиморасчетов = ЗНАЧЕНИЕ(Перечисление.ВедениеВзаиморасчетовПоДоговорам.ПоРасчетнымДокументам)) КАК Рег
+ГДЕ
+	Рег.СуммаОстаток &gt; 10
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Врем1.ПоРасчетным КАК ПоРасчетным,
+	Врем1.Субконто1 КАК Субконто1,
+	Врем1.Субконто2 КАК Субконто2,
+	Врем1.СуммаОстаток,
+	Врем1.СуммыРавны,
+	Врем1.СуммаПоДокамСвернуто,
+	Врем1.Период КАК Период,
+	Врем1.Регистратор,
+	Врем1.СуммаПоДоку,
+	ВЫБОР
+		КОГДА ДЕНЬ(&amp;ДатаОтчета) &gt; 15
+			ТОГДА НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ)
+		ИНАЧЕ ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ), ДЕНЬ, -1), МЕСЯЦ), МЕСЯЦ), ДЕНЬ, 15)
+	КОНЕЦ КАК ДатаПоследняя
+ПОМЕСТИТЬ Врем2
+ИЗ
+	Врем1 КАК Врем1
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПоРасчетным1.ПоРасчетным,
+	ПоРасчетным1.Субконто1,
+	ПоРасчетным1.Субконто2,
+	ПоРасчетным1.СуммаОстаток,
+	ПоРасчетным1.СуммыРавны,
+	ПоРасчетным1.СуммаПоДокамСвернуто,
+	ПоРасчетным1.Период,
+	ПоРасчетным1.Регистратор,
+	ПоРасчетным1.СуммаПоДоку,
+	ВЫБОР
+		КОГДА ДЕНЬ(&amp;ДатаОтчета) &gt; 15
+			ТОГДА НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ)
+		ИНАЧЕ ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ), ДЕНЬ, -1), МЕСЯЦ), МЕСЯЦ), ДЕНЬ, 15)
+	КОНЕЦ
+ИЗ
+	ПоРасчетнымДокументам КАК ПоРасчетным1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Врем2.ПоРасчетным,
+	Врем2.Субконто1,
+	Врем2.Субконто2,
+	Врем2.СуммаОстаток,
+	Врем2.СуммыРавны,
+	Врем2.СуммаПоДокамСвернуто,
+	Врем2.Период,
+	Врем2.Регистратор,
+	Врем2.СуммаПоДоку,
+	Врем2.ДатаПоследняя,
+	ВЫБОР
+		КОГДА Врем2.Период &lt; Врем2.ДатаПоследняя
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Просрочено
+ИЗ
+	Врем2 КАК Врем2</query>
+		</dataSet>
+		<totalField>
+			<dataPath>СуммаПоДоку</dataPath>
+			<expression>Сумма(СуммаПоДоку)</expression>
+		</totalField>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ДатаОтчета</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата отчета</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Просрочено</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПоРасчетным</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Субконто1</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Субконто2</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Период</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДатаПоследняя</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Регистратор</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаОстаток</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПоДокамСвернуто</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПоДоку</field>
+		</item>
+	</selection>
+	<dataParameters/>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

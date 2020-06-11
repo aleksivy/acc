@@ -1,0 +1,9 @@
+﻿04774f05-e4f6-4952-b8ff-c5ae0bd68ac9-->und\04774f05-e4f6-4952-b8ff-c5ae0bd68ac9
+04774f05-e4f6-4952-b8ff-c5ae0bd68ac9.0-->und\04774f05-e4f6-4952-b8ff-c5ae0bd68ac9.0
+cd87fb94-5104-40b7-bec0-bd1ca7c2f3be-->und\cd87fb94-5104-40b7-bec0-bd1ca7c2f3be
+cd87fb94-5104-40b7-bec0-bd1ca7c2f3be.0-->Form\ФормаОтчета
+copyinfo-->und\copyinfo
+ffa6e66c-e809-4e75-aab7-31dd489105d2-->und\ffa6e66c-e809-4e75-aab7-31dd489105d2
+root-->und\root
+version-->und\version
+versions-->und\versions

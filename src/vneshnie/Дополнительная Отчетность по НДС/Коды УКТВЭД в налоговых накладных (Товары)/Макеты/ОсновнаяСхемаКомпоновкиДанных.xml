@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорКонтрагента</dataPath>
+				<field>ДоговорКонтрагента</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Контрагент</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаМедок</dataPath>
+				<field>ЦенаМедок</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КвоМедок</dataPath>
+				<field>КвоМедок</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтавкаНДС</dataPath>
+				<field>СтавкаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТМЦ</dataPath>
+				<field>ТМЦ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ТМЦ</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТМЦ_КодУКТВЭД</dataPath>
+				<field>ТМЦ_КодУКТВЭД</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ТМЦ код УКТВЭД</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНДС</dataPath>
+				<field>СуммаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сумма</dataPath>
+				<field>Сумма</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаВзаиморасчетов</dataPath>
+				<field>СуммаВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодУКТВЭД</dataPath>
+				<field>КодУКТВЭД</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Входящая НН №</d5p1:content>
+					</d5p1:item>
+				</title>
+				<presentationExpression>Ссылка.Номер</presentationExpression>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТМЦМедок</dataPath>
+				<field>ТМЦМедок</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДляОперацийОблагаемыхНДС</dataPath>
+				<field>ДляОперацийОблагаемыхНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДляХозяйственнойДеятельности</dataPath>
+				<field>ДляХозяйственнойДеятельности</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидПосредника</dataPath>
+				<field>ВидПосредника</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Вид посредника</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НомерВходящегоДокумента</dataPath>
+				<field>НомерВходящегоДокумента</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаВходящегоДокумента</dataPath>
+				<field>ДатаВходящегоДокумента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Дата входящего документа</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаДокумента</dataPath>
+				<field>ДатаДокумента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Дата документа</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ДокТЧ.Ссылка,
+	ДокТЧ.Ссылка.Дата КАК ДатаДокумента,
+	ДокТЧ.Ссылка.НомерВходящегоДокумента КАК НомерВходящегоДокумента,
+	ДокТЧ.Ссылка.ДатаВходящегоДокумента КАК ДатаВходящегоДокумента,
+	ДокТЧ.ДоговорКонтрагента.Владелец КАК Контрагент,
+	ДокТЧ.ДоговорКонтрагента,
+	ДокТЧ.ДоговорКонтрагента.ВидПосредника КАК ВидПосредника,
+	ДокТЧ.ДоговорКонтрагента.Номенклатура КАК ТМЦ,
+	ДокТЧ.ДоговорКонтрагента.Номенклатура.НоменклатураГТД КАК ТМЦ_КодУКТВЭД,
+	ДокТЧ.ТМЦМедок,
+	ДокТЧ.Сумма,
+	ДокТЧ.СтавкаНДС,
+	ДокТЧ.СуммаВзаиморасчетов,
+	ДокТЧ.СуммаНДС,
+	ДокТЧ.ДляХозяйственнойДеятельности,
+	ДокТЧ.ДляОперацийОблагаемыхНДС,
+	ДокТЧ.КвоМедок,
+	ДокТЧ.ЦенаМедок,
+	ДокТЧ.КодУКТВЭД
+ИЗ
+	Документ.РегистрацияВходящегоНалоговогоДокумента.Товары КАК ДокТЧ
+ГДЕ
+	ДокТЧ.Ссылка.Дата &gt;= ДАТАВРЕМЯ(2017, 1, 1)
+	И ДокТЧ.ДоговорКонтрагента.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипДоговора.Товары)</query>
+		</dataSet>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Ссылка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДатаДокумента</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НомерВходящегоДокумента</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДатаВходящегоДокумента</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Контрагент</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДоговорКонтрагента</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидПосредника</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТМЦ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТМЦ_КодУКТВЭД</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТМЦМедок</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КвоМедок</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЦенаМедок</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Сумма</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СтавкаНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаВзаиморасчетов</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДляОперацийОблагаемыхНДС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДляХозяйственнойДеятельности</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КодУКТВЭД</field>
+		</item>
+	</selection>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Ссылка</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

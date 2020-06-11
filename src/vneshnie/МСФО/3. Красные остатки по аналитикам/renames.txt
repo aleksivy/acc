@@ -1,0 +1,9 @@
+﻿76012460-5c61-4633-9812-0e065a3bb17b-->und\76012460-5c61-4633-9812-0e065a3bb17b
+76012460-5c61-4633-9812-0e065a3bb17b.0-->und\76012460-5c61-4633-9812-0e065a3bb17b.0
+90e4f8b6-5a61-4827-8837-035acc4d1fb2-->und\90e4f8b6-5a61-4827-8837-035acc4d1fb2
+90e4f8b6-5a61-4827-8837-035acc4d1fb2.0-->Form\ФормаОтчета
+copyinfo-->und\copyinfo
+e34a916f-ce2c-4a92-87ee-e4074c9163ed-->und\e34a916f-ce2c-4a92-87ee-e4074c9163ed
+root-->und\root
+version-->und\version
+versions-->und\versions

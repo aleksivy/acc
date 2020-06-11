@@ -1,0 +1,9 @@
+﻿1ded9866-beb4-46b5-bc91-3a694eac79fc-->und\1ded9866-beb4-46b5-bc91-3a694eac79fc
+1ded9866-beb4-46b5-bc91-3a694eac79fc.0-->Form\ФормаОтчета
+63900187-8de2-4d88-8474-97556e240b92-->und\63900187-8de2-4d88-8474-97556e240b92
+63900187-8de2-4d88-8474-97556e240b92.0-->und\63900187-8de2-4d88-8474-97556e240b92.0
+837d2fd2-35c8-4526-89f1-c303be5dea7b-->und\837d2fd2-35c8-4526-89f1-c303be5dea7b
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
