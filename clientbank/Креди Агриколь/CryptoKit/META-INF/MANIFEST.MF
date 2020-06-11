@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.4.2_19-b04 (Sun Microsystems Inc.)
+Application-Name: CALYON_Crypto_Java_Kit
+Application-Version: 1.0
+

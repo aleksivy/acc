@@ -1,0 +1,7 @@
+﻿5185e3a6-f1af-4469-97d0-25b4a4fa1279.0\info-->und\5185e3a6-f1af-4469-97d0-25b4a4fa1279.0\info
+5185e3a6-f1af-4469-97d0-25b4a4fa1279.0\text-->ObjectModule.bsl
+copyinfo-->und\copyinfo
+fe08ae38-624d-4a23-ade5-bb607587d20f-->und\fe08ae38-624d-4a23-ade5-bb607587d20f
+root-->und\root
+version-->und\version
+versions-->und\versions
