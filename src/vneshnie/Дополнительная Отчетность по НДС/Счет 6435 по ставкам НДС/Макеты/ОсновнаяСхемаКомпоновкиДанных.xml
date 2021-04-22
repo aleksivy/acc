@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаКт</dataPath>
+				<field>ВалютаКт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Валюта</dataPath>
+				<field>Валюта</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КорСубконто1</dataPath>
+				<field>КорСубконто1</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КорСубконто2</dataPath>
+				<field>КорСубконто2</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КорСубконто3</dataPath>
+				<field>КорСубконто3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоДт1</dataPath>
+				<field>СубконтоДт1</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счет</dataPath>
+				<field>Счет</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоДт2</dataPath>
+				<field>СубконтоДт2</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначениеКт</dataPath>
+				<field>НалоговоеНазначениеКт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоДт3</dataPath>
+				<field>СубконтоДт3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто1</dataPath>
+				<field>Субконто1</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто2</dataPath>
+				<field>Субконто2</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Регистратор</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Субконто3</dataPath>
+				<field>Субконто3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сумма20</dataPath>
+				<field>Сумма20</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма20</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоКт1</dataPath>
+				<field>СубконтоКт1</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетДт</dataPath>
+				<field>СчетДт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоКт2</dataPath>
+				<field>СубконтоКт2</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СубконтоКт3</dataPath>
+				<field>СубконтоКт3</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначениеКор</dataPath>
+				<field>НалоговоеНазначениеКор</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КорСчет</dataPath>
+				<field>КорСчет</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначение</dataPath>
+				<field>НалоговоеНазначение</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетКт</dataPath>
+				<field>СчетКт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаДт</dataPath>
+				<field>ВалютаДт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сумма14</dataPath>
+				<field>Сумма14</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма14</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатурнаяГруппа</dataPath>
+				<field>НоменклатурнаяГруппа</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Номенклатурная группа</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНеизвестно</dataPath>
+				<field>СуммаНеизвестно</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма неизвестно</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=2</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаКор</dataPath>
+				<field>ВалютаКор</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НалоговоеНазначениеДт</dataPath>
+				<field>НалоговоеНазначениеДт</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Рег.Регистратор КАК Регистратор,
+	Рег.СубконтоКт1 КАК НоменклатурнаяГруппа,
+	СУММА(ВЫБОР
+			КОГДА Рег.СчетДт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.РасчетыПоНДС)
+					И Рег.СубконтоДт1 = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС20)
+				ТОГДА Рег.Сумма
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Сумма20,
+	СУММА(ВЫБОР
+			КОГДА Рег.СчетДт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.РасчетыПоНДС)
+					И Рег.СубконтоДт1 = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС14)
+				ТОГДА Рег.Сумма
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Сумма14,
+	СУММА(ВЫБОР
+			КОГДА НЕ Рег.СубконтоДт1 = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС20)
+						И НЕ Рег.СубконтоДт1 = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС14)
+					ИЛИ НЕ Рег.СчетДт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.РасчетыПоНДС)
+				ТОГДА Рег.Сумма
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаНеизвестно
+ПОМЕСТИТЬ _01_ГТДПоИмпорту
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ДвиженияССубконто(НАЧАЛОПЕРИОДА(&amp;ДатаНач, ДЕНЬ), КОНЕЦПЕРИОДА(&amp;ДатаКон, ДЕНЬ), СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.УсловнаяПродажа), , ) КАК Рег
+ГДЕ
+	ТИПЗНАЧЕНИЯ(Рег.Регистратор) = ТИП(Документ.ГТДИмпорт)
+
+СГРУППИРОВАТЬ ПО
+	Рег.Регистратор,
+	Рег.СубконтоКт1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Спр.НоменклатурнаяГруппа
+ПОМЕСТИТЬ _02_НоменклатурныеГруппыПо14
+ИЗ
+	Справочник.Номенклатура КАК Спр
+ГДЕ
+	НЕ Спр.ЭтоГруппа
+
+СГРУППИРОВАТЬ ПО
+	Спр.НоменклатурнаяГруппа
+
+ИМЕЮЩИЕ
+	МИНИМУМ(Спр.СтавкаНДС) = МАКСИМУМ(Спр.СтавкаНДС) И
+	МАКСИМУМ(Спр.СтавкаНДС) = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС14)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.Регистратор КАК Регистратор,
+	Рег.СубконтоКт1 КАК НоменклатурнаяГруппа,
+	СУММА(ВЫБОР
+			КОГДА Спр.НоменклатурнаяГруппа ЕСТЬ NULL
+					ИЛИ КОНЕЦПЕРИОДА(&amp;ДатаКон, ДЕНЬ) &lt; ДАТАВРЕМЯ(2021, 3, 1)
+				ТОГДА Рег.Сумма
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Сумма20,
+	СУММА(ВЫБОР
+			КОГДА НЕ Спр.НоменклатурнаяГруппа ЕСТЬ NULL
+					И КОНЕЦПЕРИОДА(&amp;ДатаКон, ДЕНЬ) &gt;= ДАТАВРЕМЯ(2021, 3, 1)
+				ТОГДА Рег.Сумма
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаНеизвестно
+ПОМЕСТИТЬ _03_ПрочиеДоки
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ДвиженияССубконто(НАЧАЛОПЕРИОДА(&amp;ДатаНач, ДЕНЬ), КОНЕЦПЕРИОДА(&amp;ДатаКон, ДЕНЬ), СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.УсловнаяПродажа), , ) КАК Рег
+		ЛЕВОЕ СОЕДИНЕНИЕ _02_НоменклатурныеГруппыПо14 КАК Спр
+		ПО Рег.СубконтоКт1 = Спр.НоменклатурнаяГруппа
+ГДЕ
+	НЕ ТИПЗНАЧЕНИЯ(Рег.Регистратор) = ТИП(Документ.СписаниеТоваров)
+	И НЕ ТИПЗНАЧЕНИЯ(Рег.Регистратор) = ТИП(Документ.РеализацияТоваровУслуг)
+	И НЕ ТИПЗНАЧЕНИЯ(Рег.Регистратор) = ТИП(Документ.ГТДИмпорт)
+
+СГРУППИРОВАТЬ ПО
+	Рег.Регистратор,
+	Рег.СубконтоКт1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.Регистратор КАК Регистратор,
+	Рег.СчетДт,
+	Рег.СубконтоДт1,
+	Рег.СубконтоДт2,
+	Рег.СубконтоДт3,
+	СУММА(Рег.Сумма) КАК Сумма
+ПОМЕСТИТЬ _04_РеализацияСписание6435
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ДвиженияССубконто(НАЧАЛОПЕРИОДА(&amp;ДатаНач, ДЕНЬ), КОНЕЦПЕРИОДА(&amp;ДатаКон, ДЕНЬ), СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.УсловнаяПродажа), , ) КАК Рег
+ГДЕ
+	(ТИПЗНАЧЕНИЯ(Рег.Регистратор) = ТИП(Документ.СписаниеТоваров)
+			ИЛИ ТИПЗНАЧЕНИЯ(Рег.Регистратор) = ТИП(Документ.РеализацияТоваровУслуг))
+
+СГРУППИРОВАТЬ ПО
+	Рег.Регистратор,
+	Рег.СчетДт,
+	Рег.СубконтоДт1,
+	Рег.СубконтоДт3,
+	Рег.СубконтоДт2
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег6435.Регистратор КАК Регистратор,
+	Рег6435.СчетДт,
+	Рег6435.СубконтоДт1 КАК НоменлатурнаяГруппа,
+	Рег6435.СубконтоДт2,
+	Рег6435.СубконтоДт3,
+	СУММА(ЕСТЬNULL(РегНе6435.Сумма, 0)) КАК СуммаНе6435,
+	Рег6435.Сумма КАК Сумма6435,
+	(Рег6435.Сумма - СУММА(ЕСТЬNULL(РегНе6435.Сумма, 0)) * 0.14) * 0.2 / 0.06 КАК Сумма20,
+	(СУММА(ЕСТЬNULL(РегНе6435.Сумма, 0)) * 0.2 - Рег6435.Сумма) * 0.14 / 0.06 КАК Сумма14
+ПОМЕСТИТЬ _05_РеализацияСписание
+ИЗ
+	_04_РеализацияСписание6435 КАК Рег6435
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрБухгалтерии.Хозрасчетный.ДвиженияССубконто(
+				НАЧАЛОПЕРИОДА(&amp;ДатаНач, ДЕНЬ),
+				КОНЕЦПЕРИОДА(&amp;ДатаКон, ДЕНЬ),
+				СчетДт В
+						(ВЫБРАТЬ
+							Рег.СчетДт
+						ИЗ
+							_04_РеализацияСписание6435 КАК Рег)
+					И СубконтоДт1 В
+						(ВЫБРАТЬ
+							Рег.СубконтоДт1
+						ИЗ
+							_04_РеализацияСписание6435 КАК Рег)
+					И СубконтоДт2 В
+						(ВЫБРАТЬ
+							Рег.СубконтоДт2
+						ИЗ
+							_04_РеализацияСписание6435 КАК Рег)
+					И СубконтоДт3 В
+						(ВЫБРАТЬ
+							Рег.СубконтоДт3
+						ИЗ
+							_04_РеализацияСписание6435 КАК Рег)
+					И НЕ СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.УсловнаяПродажа),
+				,
+				) КАК РегНе6435
+		ПО Рег6435.Регистратор = РегНе6435.Регистратор
+			И Рег6435.СчетДт = РегНе6435.СчетДт
+			И Рег6435.СубконтоДт1 = РегНе6435.СубконтоДт1
+			И Рег6435.СубконтоДт2 = РегНе6435.СубконтоДт2
+			И Рег6435.СубконтоДт3 = РегНе6435.СубконтоДт3
+ГДЕ
+	РегНе6435.Регистратор В
+			(ВЫБРАТЬ
+				РегНе6435.Регистратор
+			ИЗ
+				_04_РеализацияСписание6435 КАК Рег)
+
+СГРУППИРОВАТЬ ПО
+	Рег6435.Регистратор,
+	Рег6435.СчетДт,
+	Рег6435.СубконтоДт1,
+	Рег6435.СубконтоДт2,
+	Рег6435.СубконтоДт3,
+	Рег6435.Сумма
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	_05_РеализацияСписание.Регистратор,
+	_05_РеализацияСписание.НоменлатурнаяГруппа,
+	СУММА(ВЫБОР
+			КОГДА _05_РеализацияСписание.Сумма20 &gt;= -0.02
+					И _05_РеализацияСписание.Сумма20 &lt;= 0.02
+				ТОГДА 0
+			ИНАЧЕ _05_РеализацияСписание.Сумма20
+		КОНЕЦ + ВЫБОР
+			КОГДА _05_РеализацияСписание.Сумма14 &gt;= -0.02
+					И _05_РеализацияСписание.Сумма14 &lt;= 0.02
+				ТОГДА _05_РеализацияСписание.Сумма14
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Сумма20,
+	СУММА(ВЫБОР
+			КОГДА _05_РеализацияСписание.Сумма14 &gt;= -0.02
+					И _05_РеализацияСписание.Сумма14 &lt;= 0.02
+				ТОГДА 0
+			ИНАЧЕ _05_РеализацияСписание.Сумма14
+		КОНЕЦ + ВЫБОР
+			КОГДА _05_РеализацияСписание.Сумма20 &gt;= -0.02
+					И _05_РеализацияСписание.Сумма20 &lt;= 0.02
+				ТОГДА _05_РеализацияСписание.Сумма20
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Сумма14,
+	0 КАК СуммаНеизвестно
+ПОМЕСТИТЬ _06_РеализацияСписаниеСвернуто
+ИЗ
+	_05_РеализацияСписание КАК _05_РеализацияСписание
+
+СГРУППИРОВАТЬ ПО
+	_05_РеализацияСписание.Регистратор,
+	_05_РеализацияСписание.НоменлатурнаяГруппа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Доки.Регистратор,
+	Доки.НоменклатурнаяГруппа,
+	Доки.Сумма20,
+	Доки.Сумма14,
+	Доки.СуммаНеизвестно
+ПОМЕСТИТЬ _07_ВсеДоки
+ИЗ
+	_01_ГТДПоИмпорту КАК Доки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Доки.Регистратор,
+	Доки.НоменклатурнаяГруппа,
+	Доки.Сумма20,
+	0,
+	Доки.СуммаНеизвестно
+ИЗ
+	_03_ПрочиеДоки КАК Доки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Доки.Регистратор,
+	Доки.НоменлатурнаяГруппа,
+	Доки.Сумма20,
+	Доки.Сумма14,
+	Доки.СуммаНеизвестно
+ИЗ
+	_06_РеализацияСписаниеСвернуто КАК Доки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Рег.Регистратор КАК Регистратор,
+	Рег.СубконтоКт1 КАК НоменклатурнаяГруппа,
+	СУММА(Рег.Сумма) КАК Сумма6435
+ПОМЕСТИТЬ _08_6435Всего
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ДвиженияССубконто(НАЧАЛОПЕРИОДА(&amp;ДатаНач, ДЕНЬ), КОНЕЦПЕРИОДА(&amp;ДатаКон, ДЕНЬ), СчетКт = ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.УсловнаяПродажа), , ) КАК Рег
+
+СГРУППИРОВАТЬ ПО
+	Рег.Регистратор,
+	Рег.СубконтоКт1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(_07_ВсеДоки.Регистратор, _08_6435Всего.Регистратор) КАК Регистратор,
+	ЕСТЬNULL(_07_ВсеДоки.НоменклатурнаяГруппа, _08_6435Всего.НоменклатурнаяГруппа) КАК НоменклатурнаяГруппа,
+	ЕСТЬNULL(_07_ВсеДоки.Сумма20, 0) КАК Сумма20,
+	ЕСТЬNULL(_07_ВсеДоки.Сумма14, 0) КАК Сумма14,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(_08_6435Всего.Сумма6435, 0) = ЕСТЬNULL(_07_ВсеДоки.Сумма20, 0) + ЕСТЬNULL(_07_ВсеДоки.Сумма14, 0) + ЕСТЬNULL(_07_ВсеДоки.СуммаНеизвестно, 0)
+			ТОГДА ЕСТЬNULL(_07_ВсеДоки.СуммаНеизвестно, 0)
+		ИНАЧЕ ЕСТЬNULL(_08_6435Всего.Сумма6435, 0) - ЕСТЬNULL(_07_ВсеДоки.Сумма20, 0) - ЕСТЬNULL(_07_ВсеДоки.Сумма14, 0)
+	КОНЕЦ КАК СуммаНеизвестно
+ИЗ
+	_07_ВсеДоки КАК _07_ВсеДоки
+		ПОЛНОЕ СОЕДИНЕНИЕ _08_6435Всего КАК _08_6435Всего
+		ПО _07_ВсеДоки.Регистратор = _08_6435Всего.Регистратор
+			И _07_ВсеДоки.НоменклатурнаяГруппа = _08_6435Всего.НоменклатурнаяГруппа</query>
+		</dataSet>
+		<calculatedField>
+			<dataPath>ОбщаяСумма</dataPath>
+			<expression>Сумма20+Сумма14+СуммаНеизвестно</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Общая сумма</d4p1:content>
+				</d4p1:item>
+			</title>
+			<appearance>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+					<parameter>Формат</parameter>
+					<value xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>ЧДЦ=2</d6p1:content>
+						</d6p1:item>
+					</value>
+				</item>
+			</appearance>
+			<inputParameters/>
+		</calculatedField>
+		<totalField>
+			<dataPath>Сумма14</dataPath>
+			<expression>Сумма(Сумма14)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Сумма20</dataPath>
+			<expression>Сумма(Сумма20)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаНеизвестно</dataPath>
+			<expression>Сумма(СуммаНеизвестно)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОбщаяСумма</dataPath>
+			<expression>Сумма(ОбщаяСумма)</expression>
+		</totalField>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>Первые</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Первые</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+				<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<Digits>0</Digits>
+					<FractionDigits>0</FractionDigits>
+					<AllowedSign>Any</AllowedSign>
+				</NumberQualifiers>
+			</valueType>
+			<value xsi:type="xs:decimal">0</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ДатаКон</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата кон</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ДатаНач</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата нач</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>НоменклатурнаяГруппа</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОбщаяСумма</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Сумма20</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Сумма14</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНеизвестно</field>
+		</item>
+	</selection>
+	<dataParameters/>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>НоменклатурнаяГруппа</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>НоменклатурнаяГруппа</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

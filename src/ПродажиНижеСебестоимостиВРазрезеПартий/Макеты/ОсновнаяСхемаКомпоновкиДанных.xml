@@ -10,42 +10,62 @@
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СчетКт</dataPath>
 				<field>СчетКт</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СчетДт</dataPath>
 				<field>СчетДт</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СубконтоКт1</dataPath>
 				<field>СубконтоКт1</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СубконтоКт2</dataPath>
 				<field>СубконтоКт2</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СубконтоКт3</dataPath>
 				<field>СубконтоКт3</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СубконтоДт1</dataPath>
 				<field>СубконтоДт1</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СубконтоДт2</dataPath>
 				<field>СубконтоДт2</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СубконтоДт3</dataPath>
 				<field>СубконтоДт3</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ВалютаКт</dataPath>
 				<field>ВалютаКт</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ВалютаДт</dataPath>
 				<field>ВалютаДт</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НалоговоеНазначение</dataPath>
@@ -60,18 +80,26 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
 				</role>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НалоговоеНазначениеКт</dataPath>
 				<field>НалоговоеНазначениеКт</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НалоговоеНазначениеДт</dataPath>
 				<field>НалоговоеНазначениеДт</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Организация</dataPath>
 				<field>Организация</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Партия</dataPath>
@@ -86,6 +114,8 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
 				</role>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПродажаНижеСебестоимости</dataPath>
@@ -106,6 +136,7 @@
 						<value xsi:type="xs:string">БЛ=' '; БИ=+</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Регистратор</dataPath>
@@ -116,6 +147,8 @@
 						<d5p1:content>Регистратор</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СтавкаНДС</dataPath>
@@ -132,6 +165,7 @@
 						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Цена70</dataPath>
@@ -148,6 +182,7 @@
 						<value xsi:type="xs:string">ЧДЦ=2</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Цена90</dataPath>
@@ -164,6 +199,7 @@
 						<value xsi:type="xs:string">ЧДЦ=2</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Количество90Партии</dataPath>
@@ -174,6 +210,18 @@
 						<d5p1:content>Количество</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧДЦ=3</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Разница</dataPath>
@@ -190,6 +238,7 @@
 						<value xsi:type="xs:string">ЧДЦ=2</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Себестоимость</dataPath>
@@ -206,6 +255,7 @@
 						<value xsi:type="xs:string">ЧДЦ=2</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаПродажиБезНДС</dataPath>
@@ -222,17 +272,63 @@
 						<value xsi:type="xs:string">ЧДЦ=2</value>
 					</item>
 				</appearance>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Номенклатура</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Покупатель</dataPath>
+				<field>Покупатель</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Покупатель</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорПродажи</dataPath>
+				<field>ДоговорПродажи</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор продажи</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
+				</role>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
 	Рег90.Регистратор,
 	Рег90.СубконтоКт3 КАК Партия,
 	МАКСИМУМ(Рег90.НалоговоеНазначениеКт) КАК НалоговоеНазначениеПартии,
+	МАКСИМУМ(Рег90.СубконтоКт1) КАК Номенклатура,
 	СУММА(Рег90.КоличествоОборотКт) КАК Количество90Партии,
 	СУММА(Рег90.СуммаОборот) КАК СебестоимостьПартии
 ПОМЕСТИТЬ Рег90
 ИЗ
-	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, СчетДт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.СебестоимостьРеализации)), , , , ) КАК Рег90
+	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ), КОНЕЦПЕРИОДА(&amp;КонецПериода, ДЕНЬ), Регистратор, СчетДт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.СебестоимостьРеализации)), , , , ) КАК Рег90
 ГДЕ
 	ТИПЗНАЧЕНИЯ(Рег90.Регистратор) = ТИП(Документ.РеализацияТоваровУслуг)
 
@@ -266,6 +362,7 @@
 	Рег90.Регистратор,
 	Рег90.Партия,
 	Рег90.НалоговоеНазначениеПартии КАК НалоговоеНазначение,
+	Рег90.Номенклатура КАК Номенклатура,
 	СтатусНДС.СтавкаНДС,
 	ВЫБОР
 		КОГДА Рег90.Количество90Партии = 0
@@ -290,7 +387,7 @@
 	СУММА(РегНДС.СуммаОборот) КАК СуммаНДС
 ПОМЕСТИТЬ РегНДС
 ИЗ
-	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, СчетДт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ДоходыОтРеализации)), , СчетКт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыеОбязательстваВсего)), , ) КАК РегНДС
+	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ), КОНЕЦПЕРИОДА(&amp;КонецПериода, ДЕНЬ), Регистратор, СчетДт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ДоходыОтРеализации)), , СчетКт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.НалоговыеОбязательстваВсего)), , ) КАК РегНДС
 ГДЕ
 	ТИПЗНАЧЕНИЯ(РегНДС.Регистратор) = ТИП(Документ.РеализацияТоваровУслуг)
 
@@ -301,11 +398,12 @@
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
 	Рег70.Регистратор,
+	МАКСИМУМ(Рег70.СубконтоКт2) КАК ДоговорПродажи,
 	СУММА(Рег70.КоличествоОборотКт) КАК Количество70,
 	СУММА(Рег70.СуммаОборот) КАК СуммаПродажи
 ПОМЕСТИТЬ Рег70СНДС
 ИЗ
-	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, , , СчетКт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ДоходыОтРеализации)), , ) КАК Рег70
+	РегистрБухгалтерии.Хозрасчетный.ОборотыДтКт(НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ), КОНЕЦПЕРИОДА(&amp;КонецПериода, ДЕНЬ), Регистратор, , , СчетКт В ИЕРАРХИИ (ЗНАЧЕНИЕ(ПланСчетов.Хозрасчетный.ДоходыОтРеализации)), , ) КАК Рег70
 ГДЕ
 	ТИПЗНАЧЕНИЯ(Рег70.Регистратор) = ТИП(Документ.РеализацияТоваровУслуг)
 
@@ -316,6 +414,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
 	Рег70СНДС.Регистратор КАК Регистратор,
+	Рег70СНДС.ДоговорПродажи,
 	Рег70СНДС.Количество70 КАК Количество70,
 	Рег70СНДС.СуммаПродажи - ЕСТЬNULL(РегНДС.СуммаНДС, 0) КАК СуммаПродажи,
 	ВЫБОР
@@ -333,16 +432,19 @@
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
 	ЕСТЬNULL(Рег70.Регистратор, Рег90.Регистратор) КАК Регистратор,
+	ЕСТЬNULL(Рег70.Регистратор.Контрагент, Рег90.Регистратор.Контрагент) КАК Покупатель,
+	ЕСТЬNULL(Рег70.ДоговорПродажи, ЗНАЧЕНИЕ(Справочник.ДоговорыКонтрагентов.ПустаяСсылка)) КАК ДоговорПродажи,
 	ЕСТЬNULL(Рег90.Партия, ЗНАЧЕНИЕ(Документ.ПоступлениеТоваровУслуг.ПустаяСсылка)) КАК Партия,
 	ЕСТЬNULL(Рег70.Цена70, 0) КАК Цена70,
 	ЕСТЬNULL(Рег90.Цена90, 0) КАК Цена90,
 	ВЫБОР
-		КОГДА Рег90.СтавкаНДС ЕСТЬ NULL 
+		КОГДА Рег90.СтавкаНДС ЕСТЬ NULL
 				И ТИПЗНАЧЕНИЯ(Рег90.Партия) = ТИП(Документ.ОтчетПроизводстваЗаСмену)
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС20)
 		ИНАЧЕ Рег90.СтавкаНДС
 	КОНЕЦ КАК СтавкаНДС,
 	Рег90.НалоговоеНазначение,
+	ЕСТЬNULL(Рег90.Номенклатура, ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка)) КАК Номенклатура,
 	ВЫБОР
 		КОГДА ЕСТЬNULL(Рег70.Цена70, 0) &lt; ЕСТЬNULL(Рег90.Цена90, 0)
 			ТОГДА ИСТИНА
@@ -422,6 +524,15 @@
 			<field>Регистратор</field>
 		</item>
 		<item xsi:type="SelectedItemField">
+			<field>Покупатель</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДоговорПродажи</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Номенклатура</field>
+		</item>
+		<item xsi:type="SelectedItemField">
 			<field>НалоговоеНазначение</field>
 		</item>
 		<item xsi:type="SelectedItemField">
@@ -449,6 +560,7 @@
 			<field>Разница</field>
 		</item>
 	</selection>
+	<dataParameters/>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Партия</field>
@@ -467,6 +579,7 @@
 			<orderType>Asc</orderType>
 		</item>
 	</order>
+	<outputParameters/>
 	<item xsi:type="StructureItemGroup">
 		<order>
 			<item xsi:type="OrderItemAuto"/>
@@ -474,6 +587,7 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
+		<outputParameters/>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

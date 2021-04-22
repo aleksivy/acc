@@ -475,12 +475,25 @@
 				<appearance/>
 				<inputParameters/>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Риски</dataPath>
+				<field>Риски</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Риски</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
 	Рег.НалоговаяНакладная КАК НН,
 	Рег.Период КАК ПериодСтатуса,
 	Рег.Оплачено,
 	Рег.Снятие,
+	Рег.Риски,
 	Рег.ПерекрытОбязательствамиПериод1,
 	Рег.ПерекрытОбязательствамиСумма1,
 	Рег.ПерекрытОбязательствамиПериод2,
@@ -623,6 +636,7 @@
 			ТОГДА НалоговыеСвернуто.СуммаНДС
 		ИНАЧЕ 0
 	КОНЕЦ КАК Снятие,
+	СтатусыНалоговых.Риски,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод1,
 	СтатусыНалоговых.ПерекрытОбязательствамиСумма1,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод2,
@@ -640,6 +654,7 @@
 	Рег.Период КАК ПериодСтатуса,
 	Рег.Оплачено,
 	Рег.Снятие,
+	Рег.Риски,
 	Рег.ПерекрытОбязательствамиПериод1,
 	Рег.ПерекрытОбязательствамиСумма1,
 	Рег.ПерекрытОбязательствамиПериод2,
@@ -782,6 +797,7 @@
 			ТОГДА НалоговыеСвернуто.СуммаНДС
 		ИНАЧЕ 0
 	КОНЕЦ КАК Снятие,
+	СтатусыНалоговых.Риски,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод1,
 	СтатусыНалоговых.ПерекрытОбязательствамиСумма1,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод2,
@@ -840,6 +856,7 @@
 	ЕСТЬNULL(Врем.Оплачено, 0) КАК Оплачено,
 	ЕСТЬNULL(Врем.Снятие, 0) КАК Снятие,
 	ЕСТЬNULL(Врем.НеОплачено, 0) + ЕСТЬNULL(Врем.Оплачено, 0) + ЕСТЬNULL(Врем.Снятие, 0) КАК Д3ВсегоНДС,
+	ЕСТЬNULL(Врем.Риски, ЛОЖЬ) КАК Риски,
 	ЕСТЬNULL(Врем.ПерекрытОбязательствамиПериод1, ДАТАВРЕМЯ(1, 1, 1)) КАК ПерекрытОбязательствамиПериод1,
 	ЕСТЬNULL(Врем.ПерекрытОбязательствамиСумма1, 0) КАК ПерекрытОбязательствамиСумма1,
 	ЕСТЬNULL(Врем.ПерекрытОбязательствамиПериод2, ДАТАВРЕМЯ(1, 1, 1)) КАК ПерекрытОбязательствамиПериод2,
@@ -953,6 +970,7 @@
 	Врем2.Оплачено,
 	Врем2.Снятие,
 	Врем2.Д3ВсегоНДС,
+	Врем2.Риски,
 	Врем2.ПерекрытОбязательствамиПериод1,
 	Врем2.ПерекрытОбязательствамиСумма1,
 	Врем2.ПерекрытОбязательствамиПериод2,
@@ -976,8 +994,6 @@
 					<d4p1:content>Длина ИНН</d4p1:content>
 				</d4p1:item>
 			</title>
-			<appearance/>
-			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ВсеПлатежи</dataPath>
@@ -998,7 +1014,6 @@
 					<value xsi:type="DataCompositionTextPlacementType">Cut</value>
 				</item>
 			</appearance>
-			<inputParameters/>
 		</calculatedField>
 		<totalField>
 			<dataPath>Количество</dataPath>
@@ -1056,7 +1071,6 @@
 			</valueType>
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>false</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ДатаОтчета</name>
@@ -1074,7 +1088,6 @@
 			</valueType>
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>Договор</name>
@@ -1089,7 +1102,6 @@
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>НалоговаяНакладная</name>
@@ -1104,7 +1116,6 @@
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ДатаОтчетаДо</name>
@@ -1122,7 +1133,6 @@
 			</valueType>
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ВсеЗаписи</name>
@@ -1137,7 +1147,6 @@
 			</valueType>
 			<value xsi:type="xs:boolean">false</value>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
@@ -1224,6 +1233,9 @@
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>ПерекрытОбязательствамиСумма2</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Риски</field>
 		</item>
 	</selection>
 	<dataParameters/>

@@ -207,7 +207,6 @@
 						</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ПерекрытОбязательствамиПериод2</dataPath>
@@ -218,7 +217,6 @@
 						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Оплачено</dataPath>
@@ -244,7 +242,6 @@
 						</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Период</dataPath>
@@ -270,7 +267,6 @@
 						</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ИНН</dataPath>
@@ -281,8 +277,6 @@
 						<d5p1:content>ИНН</d5p1:content>
 					</d5p1:item>
 				</title>
-				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Контрагент</dataPath>
@@ -299,7 +293,6 @@
 						<value xsi:type="DataCompositionTextPlacementType">Cut</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Номенклатура</dataPath>
@@ -316,7 +309,6 @@
 						<value xsi:type="DataCompositionTextPlacementType">Cut</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НеОплачено</dataPath>
@@ -327,8 +319,6 @@
 						<d5p1:content>Не оплачено</d5p1:content>
 					</d5p1:item>
 				</title>
-				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Д3Месяц</dataPath>
@@ -339,8 +329,6 @@
 						<d5p1:content>Д3 - Месяц</d5p1:content>
 					</d5p1:item>
 				</title>
-				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Д3Год</dataPath>
@@ -362,7 +350,6 @@
 						</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НеОплаченоДо</dataPath>
@@ -373,8 +360,6 @@
 						<d5p1:content>Входящий остаток по неоплаченным</d5p1:content>
 					</d5p1:item>
 				</title>
-				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Д3ВсегоНДС</dataPath>
@@ -396,7 +381,16 @@
 						</value>
 					</item>
 				</appearance>
-				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Риски</dataPath>
+				<field>Риски</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Риски</d5p1:content>
+					</d5p1:item>
+				</title>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
@@ -404,6 +398,7 @@
 	Рег.Период КАК ПериодСтатуса,
 	Рег.Оплачено,
 	Рег.Снятие,
+	Рег.Риски,
 	Рег.ПерекрытОбязательствамиПериод1,
 	Рег.ПерекрытОбязательствамиСумма1,
 	Рег.ПерекрытОбязательствамиПериод2,
@@ -542,6 +537,7 @@
 			ТОГДА НалоговыеСвернуто.СуммаНДС
 		ИНАЧЕ 0
 	КОНЕЦ КАК Снятие,
+	СтатусыНалоговых.Риски,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод1,
 	СтатусыНалоговых.ПерекрытОбязательствамиСумма1,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод2,
@@ -559,6 +555,7 @@
 	Рег.Период КАК ПериодСтатуса,
 	Рег.Оплачено,
 	Рег.Снятие,
+	Рег.Риски,
 	Рег.ПерекрытОбязательствамиПериод1,
 	Рег.ПерекрытОбязательствамиСумма1,
 	Рег.ПерекрытОбязательствамиПериод2,
@@ -697,6 +694,7 @@
 			ТОГДА НалоговыеСвернуто.СуммаНДС
 		ИНАЧЕ 0
 	КОНЕЦ КАК Снятие,
+	СтатусыНалоговых.Риски,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод1,
 	СтатусыНалоговых.ПерекрытОбязательствамиСумма1,
 	СтатусыНалоговых.ПерекрытОбязательствамиПериод2,
@@ -753,6 +751,7 @@
 	ЕСТЬNULL(Врем.Оплачено, 0) КАК Оплачено,
 	ЕСТЬNULL(Врем.Снятие, 0) КАК Снятие,
 	ЕСТЬNULL(Врем.НеОплачено, 0) + ЕСТЬNULL(Врем.Оплачено, 0) + ЕСТЬNULL(Врем.Снятие, 0) КАК Д3ВсегоНДС,
+	ЕСТЬNULL(Врем.Риски, ЛОЖЬ) КАК Риски,
 	ЕСТЬNULL(Врем.ПерекрытОбязательствамиПериод1, ДАТАВРЕМЯ(1, 1, 1)) КАК ПерекрытОбязательствамиПериод1,
 	ЕСТЬNULL(Врем.ПерекрытОбязательствамиСумма1, 0) КАК ПерекрытОбязательствамиСумма1,
 	ЕСТЬNULL(Врем.ПерекрытОбязательствамиПериод2, ДАТАВРЕМЯ(1, 1, 1)) КАК ПерекрытОбязательствамиПериод2,
@@ -775,8 +774,6 @@
 					<d4p1:content>Длина ИНН</d4p1:content>
 				</d4p1:item>
 			</title>
-			<appearance/>
-			<inputParameters/>
 		</calculatedField>
 		<totalField>
 			<dataPath>Количество</dataPath>
@@ -834,7 +831,6 @@
 			</valueType>
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>false</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ДатаОтчета</name>
@@ -852,7 +848,6 @@
 			</valueType>
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>Договор</name>
@@ -867,7 +862,6 @@
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>НалоговаяНакладная</name>
@@ -882,7 +876,6 @@
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ДатаОтчетаДо</name>
@@ -900,7 +893,6 @@
 			</valueType>
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ВсеЗаписи</name>
@@ -915,7 +907,6 @@
 			</valueType>
 			<value xsi:type="xs:boolean">false</value>
 			<useRestriction>true</useRestriction>
-			<inputParameters/>
 		</parameter>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
@@ -996,6 +987,9 @@
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>ПерекрытОбязательствамиСумма2</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Риски</field>
 		</item>
 	</selection>
 	<dataParameters/>

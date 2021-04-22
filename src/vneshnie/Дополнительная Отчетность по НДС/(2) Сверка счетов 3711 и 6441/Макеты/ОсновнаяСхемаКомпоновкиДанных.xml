@@ -10,22 +10,32 @@
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Счет</dataPath>
 				<field>Счет</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Субконто1</dataPath>
 				<field>Субконто1</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Субконто2</dataPath>
 				<field>Субконто2</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Субконто3</dataPath>
 				<field>Субконто3</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Валюта</dataPath>
 				<field>Валюта</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Договор</dataPath>
@@ -40,6 +50,8 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 					<ignoreNullValues xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</ignoreNullValues>
 				</role>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Контрагент</dataPath>
@@ -50,14 +62,20 @@
 						<d5p1:content>Контрагент</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НалоговоеНазначение</dataPath>
 				<field>НалоговоеНазначение</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Организация</dataPath>
 				<field>Организация</field>
+				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Разница</dataPath>
@@ -74,6 +92,7 @@
 						<value xsi:type="xs:string">ЧДЦ=2</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Сумма3711</dataPath>
@@ -90,6 +109,7 @@
 						<value xsi:type="xs:string">ЧДЦ=2</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Сумма6441</dataPath>
@@ -238,14 +258,16 @@
 	Рег.ВидДеятельностиНДС,
 	Рег.СуммаНадо КАК Сумма3711,
 	ВЫБОР
-		КОГДА Рег.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС20)
+		КОГДА Рег.ВидДеятельностиНДС = ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.Облагаемая)
 			ТОГДА ВЫБОР
-					КОГДА Рег.ВидДеятельностиНДС = ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.Облагаемая)
+					КОГДА Рег.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС20)
 						ТОГДА ВЫРАЗИТЬ(Рег.СуммаНадо / 6 КАК ЧИСЛО(12, 2))
-					КОГДА Рег.ВидДеятельностиНДС = ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.ПропорциональноОблагаемая)
-						ТОГДА ВЫРАЗИТЬ(&amp;Коэффициент * Рег.СуммаНадо / 6 КАК ЧИСЛО(12, 2))
+					КОГДА Рег.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС14)
+						ТОГДА ВЫРАЗИТЬ(14 * Рег.СуммаНадо / 114 КАК ЧИСЛО(12, 2))
 					ИНАЧЕ 0
 				КОНЕЦ
+		КОГДА Рег.ВидДеятельностиНДС = ЗНАЧЕНИЕ(Перечисление.ВидыДеятельностиНДС.ПропорциональноОблагаемая)
+			ТОГДА ВЫРАЗИТЬ(&amp;Коэффициент * Рег.СуммаНадо / 6 КАК ЧИСЛО(12, 2))
 		ИНАЧЕ 0
 	КОНЕЦ КАК СуммаНДС
 ПОМЕСТИТЬ СуммыНДС
