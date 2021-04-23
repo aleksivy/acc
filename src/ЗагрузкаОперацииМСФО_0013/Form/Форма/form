@@ -106,7 +106,7 @@
 {3,0,
 {0},4,1,0,00000000-0000-0000-0000-000000000000},
 {1,0},0,0,100,0},9,2,1,0,1,1,
-{5,c3075476-605e-4bb8-a184-c578e6a1a5ef,438,1,0,1,
+{5,c3075476-605e-4bb8-a184-c578e6a1a5ef,444,1,0,1,
 {5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,0,
 {0,0,
 {0}
@@ -173,7 +173,7 @@
 {0},7,1,0,00000000-0000-0000-0000-000000000000},
 {1,0},0,0,100,0},9,2,0,2,0,1,
 {5,4321e7a6-7bdb-41bd-80bd-6fad92eef7fb,5,1,3,
-{6,b505e732-a35e-4723-807d-ccd060b5a97d,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,62410f50-91dc-4b05-adb7-cf598c87052f,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанель1ЗаполнитьПоТаблицеЗагрузки",
 {1,"КоманднаяПанель1ЗаполнитьПоТаблицеЗагрузки",
 {1,1,
@@ -197,20 +197,20 @@
 {"ru","Заполнить"}
 }
 },
-{6,37da02bf-877c-4cb2-88bd-96cc874ed69c,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,03bae923-90bb-4668-9ba0-de1a40aa02f2,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,72bd0520-1156-4e12-840f-75d00259410d,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
+{6,a8fadf3f-547c-4f72-9218-aeb8c01788e7,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
 {6,6,00000000-0000-0000-0000-000000000000,142,
 {1,0,357c6a54-357d-425d-a2bd-22f4f6e86c87,2147483647,0},0,1},0},1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,b505e732-a35e-4723-807d-ccd060b5a97d,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,62410f50-91dc-4b05-adb7-cf598c87052f,
 {8,"ЗаполнитьПоТаблицеЗагрузки",0,2,
 {1,1,
 {"ru","Заполнить"}
-},1,4321e7a6-7bdb-41bd-80bd-6fad92eef7fb,4,1e2,0,0,1,0,0,0,0},37da02bf-877c-4cb2-88bd-96cc874ed69c,
+},1,4321e7a6-7bdb-41bd-80bd-6fad92eef7fb,4,1e2,0,0,1,0,0,0,0},03bae923-90bb-4668-9ba0-de1a40aa02f2,
 {8,"Разделитель",0,1,
 {1,1,
 {"ru","Действие"}
-},0,4321e7a6-7bdb-41bd-80bd-6fad92eef7fb,5,1e2,2,0,1,0,0,0,0},72bd0520-1156-4e12-840f-75d00259410d,
+},0,4321e7a6-7bdb-41bd-80bd-6fad92eef7fb,5,1e2,2,0,1,0,0,0,0},a8fadf3f-547c-4f72-9218-aeb8c01788e7,
 {8,"ОсновныеДействияФормыЗакрыть",0,1,
 {1,1,
 {"ru","Закрыть"}
@@ -598,8 +598,10 @@
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,0},0,0,100,0},9,2,1,0,1,1,
-{5,73b9da54-d38c-45ca-a8a5-17b2b80a901b,616,1,2,
-{6,43cdaa6a-3665-4a65-932e-effe2e47eb46,1,e1692cc2-605b-4535-84dd-28440238746c,
+{5,73b9da54-d38c-45ca-a8a5-17b2b80a901b,625,1,2,
+{6,e9374423-75f6-4db2-8c79-2c52c0494d1f,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
+{6,5a6b5d17-3b06-43ef-8c7f-e542dc2a6e9e,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанель1Действие9",
 {1,"КоманднаяПанель1Действие9",
 {1,2,
@@ -627,14 +629,12 @@
 {"ru","Перенести в документ"},
 {"uk","Перенести в документ"}
 }
-},
-{6,f1bcdb09-0f72-4f68-9529-644d421795b1,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,f1bcdb09-0f72-4f68-9529-644d421795b1,
+},1,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,e9374423-75f6-4db2-8c79-2c52c0494d1f,
 {8,"Разделитель",0,1,
 {1,1,
 {"ru","Действие9"}
-},0,73b9da54-d38c-45ca-a8a5-17b2b80a901b,596,1e2,2,0,1,0,0,0,0},43cdaa6a-3665-4a65-932e-effe2e47eb46,
+},0,73b9da54-d38c-45ca-a8a5-17b2b80a901b,596,1e2,2,0,1,0,0,0,0},5a6b5d17-3b06-43ef-8c7f-e542dc2a6e9e,
 {8,"Действие9",0,1,
 {1,2,
 {"ru","Перенести в документ"},
@@ -824,7 +824,8 @@
 5sIjeQITgWlrrcYIJMM3D+YfHutVWffrrQ9QbXqxbbquvZxFgZ0Ai0Cx2sTMfMgC
 ZdJgssExumQHGlIxEGJMlz8qPllnI93SoejlKVok+dwj7eIlQMbUO8kHjUycAnOy
 DIYVir2IkxXirSa5hywsMUn55Ljgoh/R6YUvGmeKauecyv87jleGC42rjT4pSaEN
-0thWSe+Dlsrj4Rgo2CY47r+cAHmG8qHDi6UpsRiWEJ8=},0},0,0,0},
+0thWSe+Dlsrj4Rgo2CY47r+cAHmG8qHDi6UpsRiWEJ8CAVNLb/SIjcFOoNXrtr2g
+pw1jZoCA97v3AwA=},0},0,0,0},
 {0,266912fd-23b5-414c-9f46-30a96a58be4e},
 {-1},
 {-1}
@@ -869,7 +870,7 @@ DIYVir2IkxXirSa5hywsMUn55Ljgoh/R6YUvGmeKauecyv87jleGC42rjT4pSaEN
 {},22,0,
 {1,0},
 {"Pattern",
-{"#",0e66aa46-e255-4a72-b7b4-75efd0bbb3ef}
+{"#",889499a3-0544-4b7e-9670-72c9b5db2884}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
 {#base64:AgFTS2/0iI3BTqDV67a9oKcNjVBLbgMxCK26jJRLuFuQwMYDvkU3PcDMZLrsosou
@@ -929,7 +930,8 @@ pUu3de6+7mW4/AU=},0},0,0,0},
 5sIjeQITgWlrrcYIJMM3D+YfHutVWffrrQ9QbXqxbbquvZxFgZ0Ai0Cx2sTMfMgC
 ZdJgssExumQHGlIxEGJMlz8qPllnI93SoejlKVok+dwj7eIlQMbUO8kHjUycAnOy
 DIYVir2IkxXirSa5hywsMUn55Ljgoh/R6YUvGmeKauecyv87jleGC42rjT4pSaEN
-0thWSe+Dlsrj4Rgo2CY47r+cAHmG8qHDi6UpsRiWEJ8=},0},0,0,0},
+0thWSe+Dlsrj4Rgo2CY47r+cAHmG8qHDi6UpsRiWEJ8CAVNLb/SIjcFOoNXrtr2g
+pw1jZoCA97v3AwA=},0},0,0,0},
 {0,8dc5dc3c-886e-4deb-8b33-6f4213471b7b},
 {-1},
 {-1}
@@ -974,7 +976,7 @@ DIYVir2IkxXirSa5hywsMUn55Ljgoh/R6YUvGmeKauecyv87jleGC42rjT4pSaEN
 {},27,0,
 {1,0},
 {"Pattern",
-{"#",f50a2648-6dd4-4dfc-91f4-d6c4dc194736}
+{"#",bef59bf9-468d-43c3-95dd-08e0b4135994}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
 {#base64:AgFTS2/0iI3BTqDV67a9oKcNjVBBTsQwDEQcV9pPhKst2YnTJL/gwgO2bXrkgPa2
@@ -1034,7 +1036,8 @@ f+HOiFflIYRg9Xu37dpu0UdvKYyYplNAsb6eXPSY4zIPYZLMEpXn6xMWaBW84zbZ
 HnyST1DYrWhaYwTCMrsLM8NjveJxv97GANVmVLtuGPrLWTHYKiALBjBWm5gzsqgB
 yshCnUOpzrEDC5haCTGmwx83ltjmoN08YeidYS2afOZIk7MEKDBxA0WwCMtJsrPD
 RMwK1V7FEpUqXSjlqQu5pimvXFdy6Ue1vPBF44ei1jln8v++7LG50Lm2tiejKfRB
-101vtPfBauPxcAwUmi444Z87QPHAHzq9yKQkYkRCfAI=},0},0,0,0},
+101vtPfBauPxcAwUmi444Z87QPHAHzq9yKQkYkRCfAICAVNLb/SIjcFOoNXrtr2g
+pw1jZoCA97v3AwA=},0},0,0,0},
 {0,af596460-03e2-42e3-a91c-bd0f82caf928},
 {-1},
 {-1}
@@ -1173,7 +1176,7 @@ RMwK1V7FEpUqXSjlqQu5pimvXFdy6Ue1vPBF44ei1jln8v++7LG50Lm2tiejKfRB
 {381ed624-9217-4e63-85db-c4c3cb87daae,51,
 {9,
 {"Pattern",
-{"S",10,1}
+{"#",be8a274a-d4c1-4b9a-8dea-4e8e1b033a2a}
 },
 {
 {
@@ -1204,7 +1207,7 @@ RMwK1V7FEpUqXSjlqQu5pimvXFdy6Ue1vPBF44ei1jln8v++7LG50Lm2tiejKfRB
 {-18},0,0,0},
 {1,1,
 {"ru","Операция МСФО"}
-},0,0,100,1},30,0,0,1,0,0,1,1,0,0,1,0,0,10,0,0,4,0,
+},0,0,100,1},30,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,4,0,
 {"U"},
 {"U"},"",0,1,0,0,0,0,
 {4,0,
@@ -1215,10 +1218,8 @@ RMwK1V7FEpUqXSjlqQu5pimvXFdy6Ue1vPBF44ei1jln8v++7LG50Lm2tiejKfRB
 {1,0},0,0,0,0,0,0,0,16777215,1}
 },
 {1,
-{9a7643d2-19e9-45e2-8893-280bc9195a97,
-{4,
-{"U"},
-{"U"},0,"",0,0}
+{11fe1b25-97c5-4d25-ab3f-8c9a5655122e,
+{3,00000000-0000-0000-0000-000000000000}
 }
 },
 {0},0,1,0,
@@ -1318,7 +1319,7 @@ RMwK1V7FEpUqXSjlqQu5pimvXFdy6Ue1vPBF44ei1jln8v++7LG50Lm2tiejKfRB
 {0}
 }
 }
-},798,536,1,0,1,4,4,461,798,536,96},
+},798,536,1,0,1,4,4,463,798,536,96},
 {
 {1},24,
 {1,
